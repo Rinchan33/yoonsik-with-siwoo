@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f8f7f3">
+  <meta name="description" content="金允植与朴时宇的双人影像与行程档案。收录人物介绍、作品、杂志、见面会与直播整理。Two Paths, One Story.">
+  <title>Two Paths, One Story. · 金允植 & 朴时宇</title>
+  <link rel="icon" href="./favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="./styles.css">
+  <script src="./schedule-data.js" defer></script>
+  <script src="./magazine-data.js" defer></script>
+  <script src="./data.js" defer></script>
+  <script src="./app.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main" data-action="skip-main">跳转到正文</a>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="#/" aria-label="Two Paths 首页"><span class="brand-mark">k<span>&</span>p<span class="brand-dot">.</span></span><span class="brand-name">金允植 & 朴时宇<span>TWO PATHS, ONE STORY</span></span></a>
+      <nav class="main-nav" aria-label="主导航">
+        <a href="#/" data-route="home">Home<span>首页</span></a>
+        <a href="#/profile" data-route="profile">Profile<span>人物</span></a>
+        <a href="#/schedule" data-route="schedule">Schedule<span>行程</span></a>
+        <a href="#/fanmeeting" data-route="fanmeeting">Fanmeeting<span>见面会</span></a>
+        <a href="#/live" data-route="live">Live<span>直播</span></a>
+      </nav>
+      <div class="header-actions">
+        <button class="icon-button" data-action="search" aria-label="搜索全站" title="搜索全站"></button>
+        <button class="icon-button menu-toggle" data-action="menu" aria-label="打开导航" aria-expanded="false"></button>
+      </div>
+    </div>
+  </header>
+  <main id="main" tabindex="-1"></main>
+  <noscript><p class="noscript">请在浏览器中开启 JavaScript，以浏览人物资料、活动档案及筛选功能。</p></noscript>
+  <footer class="site-footer">
+    <div class="footer-main"><a class="footer-wordmark" href="#/">Two paths.<br><em>One story.</em></a><p>记录各自的闪耀，也珍藏同行的瞬间。<br><span>For every chapter, together.</span></p><a href="#/schedule" class="text-link">下一次相见 <span data-icon="arrow"></span></a></div>
+    <div class="footer-bottom"><span>© <span id="year">2026</span> KYS & PSW · FAN ARCHIVE</span><span>Unofficial fan site · All images belong to their respective owners</span><button class="plain-button" data-action="about">About This Site</button></div>
+  </footer>
+  <dialog id="detail-dialog" aria-labelledby="detail-title"><div class="dialog-top"><span>THE ARCHIVE</span><button class="icon-button" data-action="close" aria-label="关闭详情"></button></div><div id="detail-body"></div></dialog>
+  <dialog id="search-dialog" aria-labelledby="search-title"><div class="dialog-top"><h2 id="search-title">寻找一个瞬间</h2><button class="icon-button" data-action="close-search" aria-label="关闭搜索"></button></div><div class="search-wrap"><label for="search-input">搜索人物、城市、杂志或日期</label><div class="search-field"><span data-icon="search"></span><input id="search-input" type="search" placeholder="试试「澳门」或「2026-09」" autocomplete="off"></div></div><div id="search-results" aria-live="polite"></div></dialog>
+  <button id="back-to-top" class="back-to-top" type="button" aria-label="回到顶部" title="回到顶部" hidden><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="m6 12 6-6 6 6M12 6v14M5 3h14"/></svg></button>
+  <div id="toast" role="status" aria-live="polite"></div>
+</body>
+</html>

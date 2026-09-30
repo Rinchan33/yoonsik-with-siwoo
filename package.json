@@ -1,0 +1,13 @@
+{
+  "name": "two-paths-one-story",
+  "version": "1.0.0",
+  "private": true,
+  "description": "金允植与朴时宇的静态资料网站",
+  "scripts": {
+    "start": "node scripts/serve.mjs",
+    "build": "node scripts/build.mjs",
+    "test": "node --test tests/site.test.mjs",
+    "check": "node --check app.js && node --check data.js && node --check schedule-data.js && node --check magazine-data.js && node --test tests/site.test.mjs"
+  },
+  "engines": { "node": ">=20" }
+}
