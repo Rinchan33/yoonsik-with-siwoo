@@ -204,6 +204,22 @@
 ];
   const events = [
   {
+    "id": "fm-bangkok-oct",
+    "type": "fanmeeting",
+    "title": "曼谷见面会",
+    "city": "泰国·曼谷",
+    "english": "Bangkok",
+    "date": "2026-10-31",
+    "endDate": "2026-10-31",
+    "artist": "both",
+    "sessions": 1,
+    "image": "",
+    "description": "再次相聚曼谷。",
+    "venue": "PHENIX GRAND BALLROOM",
+    "time": "13:00（曼谷时间）",
+    "source": "用户提供的 resource/Fanmeeting/fanmeeting.md"
+  },
+  {
     "id": "fm-macau-oct",
     "type": "fanmeeting",
     "title": "澳门见面会",
@@ -584,7 +600,7 @@
       "3. 侵权删除说明：",
       "本站一直极力尊重并维护原作者及艺人的知识产权。若本站内容无意中侵犯了您的合法权益（包括但不限于版权、肖像权等），请原作者、版权方或经纪公司通过以下方式联系我们。核实后，我们将在第一时间（通常为24-48小时内）永久移除相关侵权内容。",
       "联系邮箱：rinsatoaki@gmail.com",
-      "资料更新于： 2026.09.30"
+      "资料更新于： 2026.10.30"
     ]
   },
   {
@@ -600,7 +616,7 @@
       "3. Notice and Takedown Policy",
       "This site consistently respects and strives to uphold the intellectual property rights and legitimate interests of original creators, management agencies, and artists. If any content on this site unintentionally infringes upon your legal rights (including but not limited to copyright and portrait rights), original creators, copyright holders, or their authorized representatives are kindly requested to contact us via email (please attach relevant proof of ownership where possible).Upon verification, we will actively cooperate and permanently remove the infringing content at the earliest possible time (typically within 24–48 hours).",
       "Contact Email: rinsatoaki@gmail.com",
-      "Last Updated: September 30, 2026"
+      "Last Updated: October 30, 2026"
     ]
   }
 ];
@@ -7942,6 +7958,6 @@
     const clean = text => String(text || '').replace(/\\/g, '\\\\').replace(/\r?\n/g, '\\n').replace(/,/g, '\\,').replace(/;/g, '\\;');
     return ['BEGIN:VCALENDAR', 'VERSION:2.0', 'PRODID:-//Two Paths//Fan Archive//ZH', 'CALSCALE:GREGORIAN', 'BEGIN:VEVENT', `UID:${event.id}@two-paths.local`, `DTSTAMP:${new Date().toISOString().replace(/[-:]/g, '').replace(/\.\d{3}/, '')}`, `DTSTART;VALUE=DATE:${event.date.replace(/-/g, '')}`, `DTEND;VALUE=DATE:${nextDay.toISOString().slice(0, 10).replace(/-/g, '')}`, `SUMMARY:${clean(event.title)} · 金允植 & 朴时宇`, `LOCATION:${clean(event.venue || event.city || '')}`, `DESCRIPTION:${clean((event.time ? '开场时间：' + event.time + '。' : '') + '全天活动提醒；具体安排以主办方公告为准。')}`, 'TRANSP:TRANSPARENT', 'END:VEVENT', 'END:VCALENDAR', ''].join('\r\n');
   }
-  globalThis.SiteData = { about, artists, events, magazines, works, lives, all, timeline, archive, categories, updated: '2026-09-30' };
+  globalThis.SiteData = { about, artists, events, magazines, works, lives, all, timeline, archive, categories, updated: '2026-10-30' };
   globalThis.SiteUtils = { today, status, daysUntil, escapeHTML, search, calendar, filterSchedule, categoryOf };
 })();

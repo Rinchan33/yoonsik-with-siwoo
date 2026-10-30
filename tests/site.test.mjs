@@ -6,11 +6,11 @@ await import('../magazine-data.js');
 await import('../data.js');
 const D = globalThis.SiteData, U = globalThis.SiteUtils;
 
-test('需求中的六条活动与多场日期完整保留', () => {
-  assert.equal(D.events.length, 6);
+test('需求中的七条活动与多场日期完整保留', () => {
+  assert.equal(D.events.length, 7);
   assert.equal(D.events.find(e => e.id === 'fm-seoul').sessions, 2);
   assert.equal(D.events.find(e => e.id === 'fm-hongkong').endDate, '2026-09-06');
-  assert.deepEqual(D.events.filter(e => U.status(e, '2026-09-20') === 'upcoming').map(e => e.date).sort(), ['2026-10-18', '2026-11-21']);
+  assert.deepEqual(D.events.filter(e => U.status(e, '2026-09-20') === 'upcoming').map(e => e.date).sort(), ['2026-10-18', '2026-10-31', '2026-11-21']);
 });
 test('跨日活动状态包含最后一天，倒计时不受本地时区影响', () => {
   const e = D.events.find(e => e.id === 'fm-hongkong');
@@ -24,7 +24,7 @@ test('跨日活动状态包含最后一天，倒计时不受本地时区影响',
 test('中英文搜索、多关键词、日期和空结果', () => {
   assert.ok(U.search('澳门').length >= 2);
   assert.equal(U.search('MACAU').length, 2);
-  assert.equal(U.search('澳门 2026-10').length, 2);
+  assert.equal(U.search('澳门 2026-10').length, 6);
   assert.equal(U.search('Madame Figaro')[0].artist, 'both');
   assert.equal(U.search('不存在的条目').length, 0);
   assert.equal(U.search('2026-09-12').find(e=>e.type==='live').type, 'live');
@@ -71,7 +71,7 @@ test('新版时间表保留源稿，时间轴按活动拆分', async () => {
     assert.ok(!record.sourcePage && !record.tentative);
   }
   assert.ok(!D.timeline.some(e => e.date === '2026-09-11'));
-  assert.equal(D.events.length, 6);
+  assert.equal(D.events.length, 7);
 });
 test('新版时间表支持同日多类型及人物筛选', () => {
   const date = '2026-07-10';
@@ -89,7 +89,7 @@ test('新版时间表支持同日多类型及人物筛选', () => {
   assert.equal(U.filterSchedule({artist:'both', query:'2026-08-30'}).length,0);
   assert.equal(U.filterSchedule({artist:'kys', category:'live', query:'2026-08-30'}).length,0);
 });
-test('三本双人杂志、两份完整文字采访及一份待更新', async () => {
+test('三本双人杂志与三份文字采访', async () => {
   assert.equal(D.magazines.length,3);
   assert.ok(D.magazines.every(m=>m.artist==='both'));
   const figaro=D.magazines.find(m=>m.id==='mag-figaro');
@@ -97,10 +97,11 @@ test('三本双人杂志、两份完整文字采访及一份待更新', async ()
   assert.equal(figaro.interview.qa.length,11);
   assert.equal(figaro.interview.sections.length,2);
   assert.equal(loading.interview.qa.length,8);
-  assert.equal(D.magazines.find(m=>m.id==='mag-powercircles').interview,null);
+  assert.equal(D.magazines.find(m=>m.id==='mag-powercircles').interview.qa.length,7);
+  assert.ok(U.search('三植').some(m=>m.id==='mag-powercircles'));
   for(const m of D.magazines){
     assert.equal(m.gallery.length,11);
-    for(const src of m.interview?.sourceImages||[]) { assert.ok(!m.gallery.includes(src),'文字扫描页不能混入画报'); await access(new URL('../'+src,import.meta.url)); }
+    await access(new URL('../'+m.interview.sourceText,import.meta.url));
   }
   assert.ok(U.search('poker face').some(m=>m.id==='mag-figaro'));
   assert.ok(U.search('桂林').some(m=>m.id==='mag-loading'));

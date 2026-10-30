@@ -1324,6 +1324,164 @@ globalThis.ScheduleArchive = [
     "image": ""
   },
   {
+    "id": "sc-2026-10-02",
+    "type": "schedule",
+    "date": "2026-10-02",
+    "endDate": "2026-10-02",
+    "artist": "both",
+    "category": "brand",
+    "categories": [
+      "brand"
+    ],
+    "title": "金允植出席山本耀司 2027春夏大秀；朴时宇出席LANVIN 2027春夏大秀",
+    "description": "金允植出席山本耀司 2027春夏大秀；朴时宇出席LANVIN 2027春夏大秀",
+    "activities": [
+      {
+        "text": "金允植出席山本耀司 2027春夏大秀",
+        "category": "brand",
+        "artist": "kys"
+      },
+      {
+        "text": "朴时宇出席LANVIN 2027春夏大秀",
+        "category": "brand",
+        "artist": "psw"
+      }
+    ],
+    "source": "用户提供的新版 Schedule（resource/Schedule/schedule.md）",
+    "image": ""
+  },
+  {
+    "id": "sc-2026-10-04",
+    "type": "schedule",
+    "date": "2026-10-04",
+    "endDate": "2026-10-04",
+    "artist": "both",
+    "category": "brand",
+    "categories": [
+      "brand",
+      "live"
+    ],
+    "title": "金允植出席Lacoste 2027春夏大秀；朴时宇出席Valentino 2027春夏大秀；朴时宇Instagram单人直播",
+    "description": "金允植出席Lacoste 2027春夏大秀；朴时宇出席Valentino 2027春夏大秀；朴时宇Instagram单人直播",
+    "activities": [
+      {
+        "text": "金允植出席Lacoste 2027春夏大秀",
+        "category": "brand",
+        "artist": "kys"
+      },
+      {
+        "text": "朴时宇出席Valentino 2027春夏大秀",
+        "category": "brand",
+        "artist": "psw"
+      },
+      {
+        "text": "朴时宇Instagram单人直播",
+        "category": "live",
+        "artist": "psw"
+      }
+    ],
+    "source": "用户提供的新版 Schedule（resource/Schedule/schedule.md）",
+    "image": ""
+  },
+  {
+    "id": "sc-2026-10-06",
+    "type": "schedule",
+    "date": "2026-10-06",
+    "endDate": "2026-10-06",
+    "artist": "both",
+    "category": "travel",
+    "categories": [
+      "travel"
+    ],
+    "title": "金允植巴黎飞往首尔；朴时宇巴黎飞往首尔",
+    "description": "金允植巴黎飞往首尔；朴时宇巴黎飞往首尔",
+    "activities": [
+      {
+        "text": "金允植巴黎飞往首尔",
+        "category": "travel",
+        "artist": "kys"
+      },
+      {
+        "text": "朴时宇巴黎飞往首尔",
+        "category": "travel",
+        "artist": "psw"
+      }
+    ],
+    "source": "用户提供的新版 Schedule（resource/Schedule/schedule.md）",
+    "image": ""
+  },
+  {
+    "id": "sc-2026-10-10",
+    "type": "schedule",
+    "date": "2026-10-10",
+    "endDate": "2026-10-10",
+    "artist": "psw",
+    "category": "travel",
+    "categories": [
+      "travel"
+    ],
+    "title": "朴时宇首尔飞往上海",
+    "description": "朴时宇首尔飞往上海",
+    "activities": [
+      {
+        "text": "朴时宇首尔飞往上海",
+        "category": "travel",
+        "artist": "psw"
+      }
+    ],
+    "source": "用户提供的新版 Schedule（resource/Schedule/schedule.md）",
+    "image": ""
+  },
+  {
+    "id": "sc-2026-10-12",
+    "type": "schedule",
+    "date": "2026-10-12",
+    "endDate": "2026-10-12",
+    "artist": "psw",
+    "category": "travel",
+    "categories": [
+      "travel"
+    ],
+    "title": "朴时宇上海飞往首尔",
+    "description": "朴时宇上海飞往首尔",
+    "activities": [
+      {
+        "text": "朴时宇上海飞往首尔",
+        "category": "travel",
+        "artist": "psw"
+      }
+    ],
+    "source": "用户提供的新版 Schedule（resource/Schedule/schedule.md）",
+    "image": ""
+  },
+  {
+    "id": "sc-2026-10-17",
+    "type": "schedule",
+    "date": "2026-10-17",
+    "endDate": "2026-10-17",
+    "artist": "both",
+    "category": "travel",
+    "categories": [
+      "travel"
+    ],
+    "title": "金允植首尔飞往澳门；朴时宇首尔飞往澳门",
+    "description": "金允植首尔飞往澳门；朴时宇首尔飞往澳门",
+    "activities": [
+      {
+        "text": "金允植首尔飞往澳门",
+        "category": "travel",
+        "artist": "kys"
+      },
+      {
+        "text": "朴时宇首尔飞往澳门",
+        "category": "travel",
+        "artist": "psw"
+      }
+    ],
+    "source": "用户提供的新版 Schedule（resource/Schedule/schedule.md）",
+    "image": ""
+  },
+  {
     "id": "sc-2026-10-18",
     "type": "schedule",
     "date": "2026-10-18",
@@ -1338,6 +1496,182 @@ globalThis.ScheduleArchive = [
     "activities": [
       {
         "text": "《检察官的提案》澳门见面会",
+        "category": "fanmeeting",
+        "artist": "both"
+      }
+    ],
+    "source": "用户提供的新版 Schedule（resource/Schedule/schedule.md）",
+    "image": ""
+  },
+  {
+    "id": "sc-2026-10-19",
+    "type": "schedule",
+    "date": "2026-10-19",
+    "endDate": "2026-10-19",
+    "artist": "both",
+    "category": "travel",
+    "categories": [
+      "travel",
+      "live"
+    ],
+    "title": "金允植澳门飞往首尔；朴时宇澳门飞往首尔；朴时宇Fromm单人直播",
+    "description": "金允植澳门飞往首尔；朴时宇澳门飞往首尔；朴时宇Fromm单人直播",
+    "activities": [
+      {
+        "text": "金允植澳门飞往首尔",
+        "category": "travel",
+        "artist": "kys"
+      },
+      {
+        "text": "朴时宇澳门飞往首尔",
+        "category": "travel",
+        "artist": "psw"
+      },
+      {
+        "text": "朴时宇Fromm单人直播",
+        "category": "live",
+        "artist": "psw"
+      }
+    ],
+    "source": "用户提供的新版 Schedule（resource/Schedule/schedule.md）",
+    "image": ""
+  },
+  {
+    "id": "sc-2026-10-20",
+    "type": "schedule",
+    "date": "2026-10-20",
+    "endDate": "2026-10-20",
+    "artist": "kys",
+    "category": "live",
+    "categories": [
+      "live"
+    ],
+    "title": "金允植Fromm单人直播",
+    "description": "金允植Fromm单人直播",
+    "activities": [
+      {
+        "text": "金允植Fromm单人直播",
+        "category": "live",
+        "artist": "kys"
+      }
+    ],
+    "source": "用户提供的新版 Schedule（resource/Schedule/schedule.md）",
+    "image": ""
+  },
+  {
+    "id": "sc-2026-10-24",
+    "type": "schedule",
+    "date": "2026-10-24",
+    "endDate": "2026-10-24",
+    "artist": "psw",
+    "category": "travel",
+    "categories": [
+      "travel"
+    ],
+    "title": "朴时宇首尔飞往上海",
+    "description": "朴时宇首尔飞往上海",
+    "activities": [
+      {
+        "text": "朴时宇首尔飞往上海",
+        "category": "travel",
+        "artist": "psw"
+      }
+    ],
+    "source": "用户提供的新版 Schedule（resource/Schedule/schedule.md）",
+    "image": ""
+  },
+  {
+    "id": "sc-2026-10-26",
+    "type": "schedule",
+    "date": "2026-10-26",
+    "endDate": "2026-10-26",
+    "artist": "both",
+    "category": "travel",
+    "categories": [
+      "travel",
+      "live"
+    ],
+    "title": "朴时宇上海飞往首尔；金允植Fromm单人直播",
+    "description": "朴时宇上海飞往首尔；金允植Fromm单人直播",
+    "activities": [
+      {
+        "text": "朴时宇上海飞往首尔",
+        "category": "travel",
+        "artist": "psw"
+      },
+      {
+        "text": "金允植Fromm单人直播",
+        "category": "live",
+        "artist": "kys"
+      }
+    ],
+    "source": "用户提供的新版 Schedule（resource/Schedule/schedule.md）",
+    "image": ""
+  },
+  {
+    "id": "sc-2026-10-27",
+    "type": "schedule",
+    "date": "2026-10-27",
+    "endDate": "2026-10-27",
+    "artist": "psw",
+    "category": "live",
+    "categories": [
+      "live"
+    ],
+    "title": "朴时宇Instagram单人直播",
+    "description": "朴时宇Instagram单人直播",
+    "activities": [
+      {
+        "text": "朴时宇Instagram单人直播",
+        "category": "live",
+        "artist": "psw"
+      }
+    ],
+    "source": "用户提供的新版 Schedule（resource/Schedule/schedule.md）",
+    "image": ""
+  },
+  {
+    "id": "sc-2026-10-30",
+    "type": "schedule",
+    "date": "2026-10-30",
+    "endDate": "2026-10-30",
+    "artist": "both",
+    "category": "travel",
+    "categories": [
+      "travel"
+    ],
+    "title": "金允植首尔飞往曼谷；朴时宇首尔飞往曼谷",
+    "description": "金允植首尔飞往曼谷；朴时宇首尔飞往曼谷",
+    "activities": [
+      {
+        "text": "金允植首尔飞往曼谷",
+        "category": "travel",
+        "artist": "kys"
+      },
+      {
+        "text": "朴时宇首尔飞往曼谷",
+        "category": "travel",
+        "artist": "psw"
+      }
+    ],
+    "source": "用户提供的新版 Schedule（resource/Schedule/schedule.md）",
+    "image": ""
+  },
+  {
+    "id": "sc-2026-10-31",
+    "type": "schedule",
+    "date": "2026-10-31",
+    "endDate": "2026-10-31",
+    "artist": "both",
+    "category": "fanmeeting",
+    "categories": [
+      "fanmeeting"
+    ],
+    "title": "《检察官的提案》曼谷见面会",
+    "description": "《检察官的提案》曼谷见面会",
+    "activities": [
+      {
+        "text": "《检察官的提案》曼谷见面会",
         "category": "fanmeeting",
         "artist": "both"
       }

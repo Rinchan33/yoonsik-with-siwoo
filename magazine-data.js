@@ -1,5 +1,5 @@
-/* 采访逐字整理自用户提供的内页图片。仅调整换行、全角标点与说话人名称。
- * 文字内页不加入 gallery；gallery 只含封面与摄影画报。
+/* 采访文字汇总见 resource/Profile/三本杂志采访.md。
+ * gallery 只含封面与摄影画报；采访扫描图已移除。
  */
 (() => {
   const qa = (question, answers) => ({ question, answers: answers.map(([speaker, text]) => ({ speaker, text })) });
@@ -104,10 +104,403 @@
       ['kys','因为我们收到了很多爱和关注，还能通过“LOADING”和大家问好，我真是太感动了。'], ['psw','真的。'], ['kys','我觉得很有意义所以此时此刻称为最快乐的时刻也不为过。'], ['psw','这些天我们俩每天都很开心。']
     ])
   ];
+  const powercirclesQA = [
+  {
+    "question": "对方身上最吸引你的外貌特征是什么？",
+    "answers": [
+      {
+        "speaker": "psw",
+        "text": "我会选，瞳孔。"
+      },
+      {
+        "speaker": "kys",
+        "text": "瞳孔，为什么？"
+      },
+      {
+        "speaker": "psw",
+        "text": "仔细观察允植的瞳孔的话，它是棕色的，他的瞳孔特别有魅力。摄像机准备对焦！开始，放大！"
+      },
+      {
+        "speaker": "kys",
+        "text": "（笑）原来我的瞳孔这么有魅力吗？"
+      },
+      {
+        "speaker": "psw",
+        "text": "是的，每次看都会觉得很惊艳也很吸引人。"
+      },
+      {
+        "speaker": "kys",
+        "text": "我的回答和他有点像也有点不一样。我会选眼睛，我想告诉你，你的眼睛像小鹿一样，我觉得特别有魅力。"
+      },
+      {
+        "speaker": "psw",
+        "text": "哦～～这样。"
+      },
+      {
+        "speaker": "kys",
+        "text": "我该说看着你的眼睛时，总会有一种忍不住陷进去的感觉吗？"
+      },
+      {
+        "speaker": "psw",
+        "text": "你已经陷进去了吗？"
+      },
+      {
+        "speaker": "kys",
+        "text": "是的。来，对焦！一二三！所以我们都选了眼睛和瞳孔，这两个有着相似魅力的外貌特点呢。"
+      },
+      {
+        "speaker": "psw",
+        "text": "是啊，看来眼睛就是最有魅力的地方。"
+      }
+    ]
+  },
+  {
+    "question": "两位是因为什么契机变熟的，有没有印象深刻的故事可以分享？",
+    "answers": [
+      {
+        "speaker": "psw",
+        "text": "我想应该是我们在拍摄之前，经常见面，一起排练，所以变得熟悉了。"
+      },
+      {
+        "speaker": "kys",
+        "text": "嗯嗯没错。我们见面时聊了很多，也一起吃了很多顿饭，所以关系就越来越好了。我觉得如果一定要说一个契机的话，我觉得是去时宇家玩那次，那次之后我们真的一下子亲近了很多。"
+      },
+      {
+        "speaker": "psw",
+        "text": "哦～没错。"
+      },
+      {
+        "speaker": "kys",
+        "text": "毕竟家本来就是一个很私人的空间，光是能去他家这一点，就让我觉得我们真的变亲近了，我当时是这样的感觉。"
+      },
+      {
+        "speaker": "psw",
+        "text": "我也这么觉得。"
+      },
+      {
+        "speaker": "kys",
+        "text": "你也觉得我去你家玩那次让我们变得更亲近了吗？"
+      },
+      {
+        "speaker": "psw",
+        "text": "在那之后，开始拍摄以后肢体接触也变多了。"
+      },
+      {
+        "speaker": "kys",
+        "text": "哦～那你的意思是在拍摄之前我们还不够熟咯？你一直觉得我们不亲近吗？"
+      },
+      {
+        "speaker": "psw",
+        "text": "在那之前的话可能……"
+      },
+      {
+        "speaker": "kys",
+        "text": "哇！太过分了吧！（锤）"
+      }
+    ]
+  },
+  {
+    "question": "允植提问——最喜欢的演员是？",
+    "answers": [
+      {
+        "speaker": "psw",
+        "text": "我选择金允植演员。"
+      },
+      {
+        "speaker": "kys",
+        "text": "不愧是你！（拍）"
+      },
+      {
+        "speaker": "psw",
+        "text": "哦，你认识他吗？"
+      },
+      {
+        "speaker": "kys",
+        "text": "那位很有魅力呢。"
+      },
+      {
+        "speaker": "psw",
+        "text": "金允植演员最近很受欢迎呢，我最近真的已经把他当成自己的榜样了。"
+      },
+      {
+        "speaker": "kys",
+        "text": "甚至已经成为榜样了吗？"
+      },
+      {
+        "speaker": "psw",
+        "text": "对啊，我真的觉得他特别帅气。"
+      },
+      {
+        "speaker": "kys",
+        "text": "你还挺会说话的嘛。"
+      },
+      {
+        "speaker": "psw",
+        "text": "当然啦！"
+      },
+      {
+        "speaker": "kys",
+        "text": "我写这个问题就是想听你这么回答！（笑）"
+      },
+      {
+        "speaker": "psw",
+        "text": "早知道这样我就选别人了。"
+      },
+      {
+        "speaker": "kys",
+        "text": "那可不行！"
+      }
+    ]
+  },
+  {
+    "question": "允植提问——最喜欢的食物是？",
+    "answers": [
+      {
+        "speaker": "psw",
+        "text": "最喜欢的食物是，西瓜。西瓜算食物吗？"
+      },
+      {
+        "speaker": "kys",
+        "text": "要说一道料理。"
+      },
+      {
+        "speaker": "psw",
+        "text": "料理吗？那我选辣炖鸡汤。"
+      },
+      {
+        "speaker": "kys",
+        "text": "我也是，下雨天真的很想吃辣炖鸡汤。"
+      },
+      {
+        "speaker": "psw",
+        "text": "真的吗？不过我最近也迷上了辣炖鸡，真的好好吃。"
+      },
+      {
+        "speaker": "kys",
+        "text": "没错，非常美味。"
+      },
+      {
+        "speaker": "psw",
+        "text": "那反过来，你有最喜欢的食物嘛？"
+      },
+      {
+        "speaker": "kys",
+        "text": "我呢，最喜欢炸鸡。"
+      },
+      {
+        "speaker": "psw",
+        "text": "你还记得我们拍戏的时候一起吃炸鸡吗？"
+      },
+      {
+        "speaker": "kys",
+        "text": "啊，在酒店房间里，我们一起吃了炸鸡对吧，没错我记得。"
+      }
+    ]
+  },
+  {
+    "question": "允植提问——允植 vs 三植？",
+    "answers": [
+      {
+        "speaker": "kys",
+        "text": "先给不认识三植的朋友介绍一下吧！"
+      },
+      {
+        "speaker": "psw",
+        "text": "这只叫三植的朋友呢，是我们金允植演员养的猫。"
+      },
+      {
+        "speaker": "kys",
+        "text": "没错。"
+      },
+      {
+        "speaker": "psw",
+        "text": "是只小母猫。它明明是只母猫，为什么会叫三植呢？因为他叫允植，所以给它起名叫三植了。"
+      },
+      {
+        "speaker": "kys",
+        "text": "没错，它是我的宝贝猫咪。"
+      },
+      {
+        "speaker": "psw",
+        "text": "不过也可以帮它取一个更可爱的名字吧？"
+      },
+      {
+        "speaker": "kys",
+        "text": "哪里不可爱了，三植这个名字？（撒娇）"
+      },
+      {
+        "speaker": "psw",
+        "text": "三植确实很可爱。"
+      },
+      {
+        "speaker": "kys",
+        "text": "那来选吧，三植 vs 允植？一二三！"
+      },
+      {
+        "speaker": "psw",
+        "text": "允植！"
+      },
+      {
+        "speaker": "kys",
+        "text": "谢谢你～"
+      },
+      {
+        "speaker": "psw",
+        "text": "毕竟我和三植没有那么熟，至少和允植（比较熟）。"
+      },
+      {
+        "speaker": "kys",
+        "text": "谢谢你～"
+      }
+    ]
+  },
+  {
+    "question": "时宇提问——你最喜欢时宇身体的哪个部位？",
+    "answers": [
+      {
+        "speaker": "kys",
+        "text": "这个问题不是问过了吗，跟第一个问题不是很像嘛？"
+      },
+      {
+        "speaker": "psw",
+        "text": "可是这里写的是，身体部位。"
+      },
+      {
+        "speaker": "kys",
+        "text": "眼睛不是身体部位吗？"
+      },
+      {
+        "speaker": "psw",
+        "text": "不是哦，除了脸，再往下面一点。"
+      },
+      {
+        "speaker": "kys",
+        "text": "再往下吗？"
+      },
+      {
+        "speaker": "psw",
+        "text": "对的。"
+      },
+      {
+        "speaker": "kys",
+        "text": "为什么？你该不会是变态吧？（笑）"
+      },
+      {
+        "speaker": "psw",
+        "text": "变态明明就是哥吧？"
+      },
+      {
+        "speaker": "kys",
+        "text": "才不是吧！啊，居然问这种问题吗？"
+      },
+      {
+        "speaker": "psw",
+        "text": "不是！怎么了！"
+      },
+      {
+        "speaker": "kys",
+        "text": "既然抽到了还是认真回答吧。我选，喉结，你的喉结很明显，我觉得特别有男人味。"
+      },
+      {
+        "speaker": "psw",
+        "text": "我的喉结吗？"
+      },
+      {
+        "speaker": "kys",
+        "text": "我的喉结就不是很明显。"
+      },
+      {
+        "speaker": "psw",
+        "text": "真的诶，你的喉结不是很明显。"
+      },
+      {
+        "speaker": "kys",
+        "text": "是的，所以我觉得有明显喉结这点特别有男人味。"
+      },
+      {
+        "speaker": "psw",
+        "text": "确实，我的喉结其实真的蛮明显的。"
+      },
+      {
+        "speaker": "kys",
+        "text": "是的，所以是很有魅力的身体部位。"
+      },
+      {
+        "speaker": "psw",
+        "text": "你很好地回答了这个问题哦。"
+      }
+    ]
+  },
+  {
+    "question": "时宇提问——最喜欢什么香味？",
+    "answers": [
+      {
+        "speaker": "kys",
+        "text": "这应该不是要说具体品牌吧？"
+      },
+      {
+        "speaker": "psw",
+        "text": "对的，在所有气味中，比如果香木质香之类的，这一题我觉得粉丝们应该也会很好奇。"
+      },
+      {
+        "speaker": "kys",
+        "text": "我比较喜欢清爽一点的，像柑橘、橙子这一类的香味我都很喜欢。"
+      },
+      {
+        "speaker": "psw",
+        "text": "凉爽的柑橘味。"
+      },
+      {
+        "speaker": "kys",
+        "text": "是的，不然就是，该怎么说呢？比如说，扁柏，桧木这种木质香？"
+      },
+      {
+        "speaker": "psw",
+        "text": "扁柏和桧木？"
+      },
+      {
+        "speaker": "kys",
+        "text": "是的，所以我平时用的香水大多柑橘调或这种清爽的香味。"
+      },
+      {
+        "speaker": "psw",
+        "text": "哦～是的。"
+      },
+      {
+        "speaker": "kys",
+        "text": "不然就是乳液之类的话，我也偏爱带一点木质香气的，我非常喜欢这样的香味。"
+      },
+      {
+        "speaker": "psw",
+        "text": "每次哥来拍摄，或者我们呆在一起的时候，我觉得都会有一种属于哥自己的味道。"
+      },
+      {
+        "speaker": "kys",
+        "text": "真的吗？是什么味道？"
+      },
+      {
+        "speaker": "psw",
+        "text": "很好闻。只要闻到那个味道，就知道哥来了。"
+      },
+      {
+        "speaker": "kys",
+        "text": "哦～会有这种感觉吗？"
+      },
+      {
+        "speaker": "psw",
+        "text": "嗯嗯，我有这种感觉。"
+      },
+      {
+        "speaker": "kys",
+        "text": "听起来不错呢。"
+      }
+    ]
+  }
+];
   const range = (first,last) => Array.from({length:last-first+1},(_,i)=>i+first);
   globalThis.MagazineArchive = [
-    { id:'mag-figaro', type:'magazine', artist:'both', title:'Madame Figaro', chinese:'费加罗', subtitle:'金允植 & 朴时宇 · 相遇正当时', date:'', issue:'2026 年 8 月刊', description:'Timely Encounter · 相遇正当时', image:'resource/Profile/双人杂志_费加罗封面_1.jpg', gallery:[...range(1,3).map(i=>`resource/Profile/双人杂志_费加罗封面_${i}.jpg`),...range(3,10).map(i=>`resource/Profile/双人杂志_费加罗内页_${i}.jpg`)], interview:{qa:figaroQA,sections:figaroArticle,sourceImages:['resource/Profile/双人杂志_费加罗内页_1.jpg','resource/Profile/双人杂志_费加罗内页_2.jpg']}, source:'用户提供的费加罗封面及两张文字内页' },
-    { id:'mag-loading', type:'magazine', artist:'both', title:'LOADING', chinese:'LOADING', subtitle:'金允植 & 朴时宇 · 时日绵长', date:'', issue:'双人刊 · 期号待补充', description:'Long Days · 时日绵长', image:'resource/Profile/双人杂志_loading_封面_1.jpg', gallery:[...range(1,3).map(i=>`resource/Profile/双人杂志_loading_封面_${i}.jpg`),...range(3,10).map(i=>`resource/Profile/双人杂志_loading_内页_${i}.jpg`)], interview:{qa:loadingQA,sections:[],sourceImages:['resource/Profile/双人杂志_loading内页_1.jpg','resource/Profile/双人杂志_loading内页_2.jpg']}, source:'用户提供的 LOADING 封面及两张文字内页' },
-    { id:'mag-powercircles', type:'magazine', artist:'both', title:'PowerCircles', chinese:'势界', subtitle:'金允植 & 朴时宇 · 日界相融，我们相拥', date:'2026-09', issue:'2026 年 9 月刊', description:'No Line on the Horizon', image:'resource/Profile/双人杂志_势界_封面_1.jpg', gallery:[...range(1,3).map(i=>`resource/Profile/双人杂志_势界_封面_${i}.jpg`),...range(3,10).map(i=>`resource/Profile/双人杂志_势界_内页_${i}.jpg`)], interview:null, source:'用户提供的势界封面及画报内页' }
+    { id:'mag-figaro', type:'magazine', artist:'both', title:'Madame Figaro', chinese:'费加罗', subtitle:'金允植 & 朴时宇 · 相遇正当时', date:'', issue:'2026 年 8 月刊', description:'Timely Encounter · 相遇正当时', image:'resource/Profile/双人杂志_费加罗封面_1.jpg', gallery:[...range(1,3).map(i=>`resource/Profile/双人杂志_费加罗封面_${i}.jpg`),...range(3,10).map(i=>`resource/Profile/双人杂志_费加罗内页_${i}.jpg`)], interview:{qa:figaroQA,sections:figaroArticle,sourceText:'resource/Profile/三本杂志采访.md'}, source:'用户提供的费加罗封面及两张文字内页' },
+    { id:'mag-loading', type:'magazine', artist:'both', title:'LOADING', chinese:'LOADING', subtitle:'金允植 & 朴时宇 · 时日绵长', date:'', issue:'双人刊 · 期号待补充', description:'Long Days · 时日绵长', image:'resource/Profile/双人杂志_loading_封面_1.jpg', gallery:[...range(1,3).map(i=>`resource/Profile/双人杂志_loading_封面_${i}.jpg`),...range(3,10).map(i=>`resource/Profile/双人杂志_loading_内页_${i}.jpg`)], interview:{qa:loadingQA,sections:[],sourceText:'resource/Profile/三本杂志采访.md'}, source:'用户提供的 LOADING 封面及两张文字内页' },
+    { id:'mag-powercircles', type:'magazine', artist:'both', title:'PowerCircles', chinese:'势界', subtitle:'金允植 & 朴时宇 · 日界相融，我们相拥', date:'2026-09', issue:'2026 年 9 月刊', description:'No Line on the Horizon', image:'resource/Profile/双人杂志_势界_封面_1.jpg', gallery:[...range(1,3).map(i=>`resource/Profile/双人杂志_势界_封面_${i}.jpg`),...range(3,10).map(i=>`resource/Profile/双人杂志_势界_内页_${i}.jpg`)], interview:{qa:powercirclesQA,sections:[],sourceText:'resource/Profile/三本杂志采访.md'}, source:'用户提供的势界封面、画报及两张采访内页' }
   ];
 })();
