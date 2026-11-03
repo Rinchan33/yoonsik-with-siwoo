@@ -65,7 +65,7 @@ npm start
 
 ### 杂志文字与画报
 
-三本杂志的采访汇总在 `resource/Profile/三本杂志采访.md`，包含费加罗 11 组问答及 2 个文章篇章、LOADING 8 组问答、势界 7 组问答。网站展示数据保存在 `magazine-data.js`；修改采访时请同步维护两处。
+三本杂志的采访汇总在 `resource/Profile/杂志/三本杂志采访.md`，包含费加罗 11 组问答及 2 个文章篇章、LOADING 8 组问答、势界 7 组问答。网站展示数据保存在 `magazine-data.js`；修改采访时请同步维护两处。
 
 采访扫描图已删除，`interview.sourceText` 指向文字汇总；`gallery` 只保留封面和摄影画报，每本 11 张。
 

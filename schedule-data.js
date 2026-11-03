@@ -8,19 +8,47 @@ globalThis.ScheduleArchive = [
     "artist": "both",
     "category": "shoot",
     "categories": [
-      "shoot"
+      "shoot",
+      "activity"
     ],
-    "title": "《检察官的提案》正式开始拍摄",
-    "description": "《检察官的提案》正式开始拍摄",
+    "title": "《检察官的提案》正式开始拍摄；朴时宇25岁生日",
+    "description": "《检察官的提案》正式开始拍摄；朴时宇25岁生日",
     "activities": [
       {
         "text": "《检察官的提案》正式开始拍摄",
         "category": "shoot",
         "artist": "both"
+      },
+      {
+        "text": "朴时宇25岁生日",
+        "category": "activity",
+        "artist": "psw"
       }
     ],
     "source": "用户提供的新版 Schedule（resource/Schedule/schedule.md）",
     "image": ""
+  },
+  {
+    "id": "sc-2026-05-18",
+    "type": "schedule",
+    "date": "2026-05-18",
+    "endDate": "2026-05-18",
+    "source": "用户提供的新版 Schedule（resource/Schedule/schedule.md）",
+    "image": "",
+    "activities": [
+      {
+        "text": "金允植28岁生日",
+        "category": "activity",
+        "artist": "kys"
+      }
+    ],
+    "description": "金允植28岁生日",
+    "title": "金允植28岁生日",
+    "categories": [
+      "activity"
+    ],
+    "category": "activity",
+    "artist": "kys"
   },
   {
     "id": "sc-2026-05-21",
@@ -98,11 +126,11 @@ globalThis.ScheduleArchive = [
     "categories": [
       "live"
     ],
-    "title": "金允植、朴时宇Instagram双人直播（金允植粉色衬衫）",
-    "description": "金允植、朴时宇Instagram双人直播（金允植粉色衬衫）",
+    "title": "金允植&朴时宇Instagram双人直播（金允植粉色衬衫）",
+    "description": "金允植&朴时宇Instagram双人直播（金允植粉色衬衫）",
     "activities": [
       {
-        "text": "金允植、朴时宇Instagram双人直播（金允植粉色衬衫）",
+        "text": "金允植&朴时宇Instagram双人直播（金允植粉色衬衫）",
         "category": "live",
         "artist": "both"
       }
@@ -144,11 +172,11 @@ globalThis.ScheduleArchive = [
       "social",
       "live"
     ],
-    "title": "金允植、朴时宇《Loading》杂志拍摄；朴时宇开通Fromm账号；朴时宇Fromm单人直播（蓝色卫衣）",
-    "description": "金允植、朴时宇《Loading》杂志拍摄；朴时宇开通Fromm账号；朴时宇Fromm单人直播（蓝色卫衣）",
+    "title": "金允植&朴时宇《Loading》杂志拍摄；朴时宇开通Fromm账号；朴时宇Fromm单人直播（蓝色卫衣）",
+    "description": "金允植&朴时宇《Loading》杂志拍摄；朴时宇开通Fromm账号；朴时宇Fromm单人直播（蓝色卫衣）",
     "activities": [
       {
-        "text": "金允植、朴时宇《Loading》杂志拍摄",
+        "text": "金允植&朴时宇《Loading》杂志拍摄",
         "category": "magazine",
         "artist": "both"
       },
@@ -176,11 +204,11 @@ globalThis.ScheduleArchive = [
     "categories": [
       "live"
     ],
-    "title": "金允植、朴时宇Instagram双人直播（金允植口罩帽子朴时宇牛仔衬衫）",
-    "description": "金允植、朴时宇Instagram双人直播（金允植口罩帽子朴时宇牛仔衬衫）",
+    "title": "金允植&朴时宇Instagram双人直播（金允植口罩帽子朴时宇牛仔衬衫）",
+    "description": "金允植&朴时宇Instagram双人直播（金允植口罩帽子朴时宇牛仔衬衫）",
     "activities": [
       {
-        "text": "金允植、朴时宇Instagram双人直播（金允植口罩帽子朴时宇牛仔衬衫）",
+        "text": "金允植&朴时宇Instagram双人直播（金允植口罩帽子朴时宇牛仔衬衫）",
         "category": "live",
         "artist": "both"
       }
@@ -198,11 +226,11 @@ globalThis.ScheduleArchive = [
     "categories": [
       "magazine"
     ],
-    "title": "金允植、朴时宇《势界》杂志拍摄",
-    "description": "金允植、朴时宇《势界》杂志拍摄",
+    "title": "金允植&朴时宇《势界》杂志拍摄",
+    "description": "金允植&朴时宇《势界》杂志拍摄",
     "activities": [
       {
-        "text": "金允植、朴时宇《势界》杂志拍摄",
+        "text": "金允植&朴时宇《势界》杂志拍摄",
         "category": "magazine",
         "artist": "both"
       }
@@ -286,11 +314,11 @@ globalThis.ScheduleArchive = [
     "categories": [
       "live"
     ],
-    "title": "金允植、朴时宇与赵珉奎、薛俊秀Fromm四人直播；朴时宇Instagram单人直播（粉色衬衫）",
-    "description": "金允植、朴时宇与赵珉奎、薛俊秀Fromm四人直播；朴时宇Instagram单人直播（粉色衬衫）",
+    "title": "《检察官的提案》剧组Fromm四人直播；朴时宇Instagram单人直播（粉色衬衫）",
+    "description": "《检察官的提案》剧组Fromm四人直播；朴时宇Instagram单人直播（粉色衬衫）",
     "activities": [
       {
-        "text": "金允植、朴时宇与赵珉奎、薛俊秀Fromm四人直播",
+        "text": "《检察官的提案》剧组Fromm四人直播",
         "category": "live",
         "artist": "both"
       },
@@ -304,6 +332,28 @@ globalThis.ScheduleArchive = [
     "image": ""
   },
   {
+    "id": "sc-2026-07-19",
+    "type": "schedule",
+    "date": "2026-07-19",
+    "endDate": "2026-07-19",
+    "source": "用户提供的新版 Schedule（resource/Schedule/schedule.md）",
+    "image": "",
+    "activities": [
+      {
+        "text": "金允植&朴时宇SnackPaper商务拍摄",
+        "category": "shoot",
+        "artist": "both"
+      }
+    ],
+    "description": "金允植&朴时宇SnackPaper商务拍摄",
+    "title": "金允植&朴时宇SnackPaper商务拍摄",
+    "categories": [
+      "shoot"
+    ],
+    "category": "shoot",
+    "artist": "both"
+  },
+  {
     "id": "sc-2026-07-20",
     "type": "schedule",
     "date": "2026-07-20",
@@ -313,11 +363,11 @@ globalThis.ScheduleArchive = [
     "categories": [
       "social"
     ],
-    "title": "金允植、朴时宇Fromm双人秘密群聊开通",
-    "description": "金允植、朴时宇Fromm双人秘密群聊开通",
+    "title": "金允植&朴时宇Fromm双人秘密群聊开通",
+    "description": "金允植&朴时宇Fromm双人秘密群聊开通",
     "activities": [
       {
-        "text": "金允植、朴时宇Fromm双人秘密群聊开通",
+        "text": "金允植&朴时宇Fromm双人秘密群聊开通",
         "category": "social",
         "artist": "both"
       }
@@ -336,11 +386,11 @@ globalThis.ScheduleArchive = [
       "magazine",
       "live"
     ],
-    "title": "金允植、朴时宇《费加罗》杂志拍摄；金允植Instagram单人直播（黑格衬衫）",
-    "description": "金允植、朴时宇《费加罗》杂志拍摄；金允植Instagram单人直播（黑格衬衫）",
+    "title": "金允植&朴时宇《费加罗》杂志拍摄；金允植Instagram单人直播（黑格衬衫）",
+    "description": "金允植&朴时宇《费加罗》杂志拍摄；金允植Instagram单人直播（黑格衬衫）",
     "activities": [
       {
-        "text": "金允植、朴时宇《费加罗》杂志拍摄",
+        "text": "金允植&朴时宇《费加罗》杂志拍摄",
         "category": "magazine",
         "artist": "both"
       },
@@ -385,11 +435,11 @@ globalThis.ScheduleArchive = [
     "categories": [
       "travel"
     ],
-    "title": "朴时宇从首尔前往上海",
-    "description": "朴时宇从首尔前往上海",
+    "title": "朴时宇首尔飞往上海",
+    "description": "朴时宇首尔飞往上海",
     "activities": [
       {
-        "text": "朴时宇从首尔前往上海",
+        "text": "朴时宇首尔飞往上海",
         "category": "travel",
         "artist": "psw"
       }
@@ -425,19 +475,13 @@ globalThis.ScheduleArchive = [
     "date": "2026-07-27",
     "endDate": "2026-07-27",
     "artist": "both",
-    "category": "travel",
+    "category": "live",
     "categories": [
-      "travel",
       "live"
     ],
-    "title": "朴时宇上海迪士尼乐园；金允植Instagram单人直播（黑框眼镜）；朴时宇Fromm单人直播（迪士尼）",
-    "description": "朴时宇上海迪士尼乐园；金允植Instagram单人直播（黑框眼镜）；朴时宇Fromm单人直播（迪士尼）",
+    "title": "金允植Instagram单人直播（黑框眼镜）；朴时宇Fromm单人直播（迪士尼）",
+    "description": "金允植Instagram单人直播（黑框眼镜）；朴时宇Fromm单人直播（迪士尼）",
     "activities": [
-      {
-        "text": "朴时宇上海迪士尼乐园",
-        "category": "travel",
-        "artist": "psw"
-      },
       {
         "text": "金允植Instagram单人直播（黑框眼镜）",
         "category": "live",
@@ -484,11 +528,11 @@ globalThis.ScheduleArchive = [
     "categories": [
       "travel"
     ],
-    "title": "朴时宇从上海前往首尔",
-    "description": "朴时宇从上海前往首尔",
+    "title": "朴时宇上海飞往首尔",
+    "description": "朴时宇上海飞往首尔",
     "activities": [
       {
-        "text": "朴时宇从上海前往首尔",
+        "text": "朴时宇上海飞往首尔",
         "category": "travel",
         "artist": "psw"
       }
@@ -528,11 +572,11 @@ globalThis.ScheduleArchive = [
     "categories": [
       "shoot"
     ],
-    "title": "金允植、朴时宇施洛华（眼镜品牌）商务拍摄",
-    "description": "金允植、朴时宇施洛华（眼镜品牌）商务拍摄",
+    "title": "金允植&朴时宇施洛华（眼镜品牌）商务拍摄",
+    "description": "金允植&朴时宇施洛华（眼镜品牌）商务拍摄",
     "activities": [
       {
-        "text": "金允植、朴时宇施洛华（眼镜品牌）商务拍摄",
+        "text": "金允植&朴时宇施洛华（眼镜品牌）商务拍摄",
         "category": "shoot",
         "artist": "both"
       }
@@ -572,11 +616,11 @@ globalThis.ScheduleArchive = [
     "categories": [
       "travel"
     ],
-    "title": "金允植、朴时宇从首尔前往澳门",
-    "description": "金允植、朴时宇从首尔前往澳门",
+    "title": "金允植&朴时宇首尔飞往澳门",
+    "description": "金允植&朴时宇首尔飞往澳门",
     "activities": [
       {
-        "text": "金允植、朴时宇从首尔前往澳门",
+        "text": "金允植&朴时宇首尔飞往澳门",
         "category": "travel",
         "artist": "both"
       }
@@ -617,8 +661,8 @@ globalThis.ScheduleArchive = [
       "live",
       "travel"
     ],
-    "title": "朴时宇Instagram单人直播（白色INUFF文化衫）；金允植、朴时宇从澳门前往首尔",
-    "description": "朴时宇Instagram单人直播（白色INUFF文化衫）；金允植、朴时宇从澳门前往首尔",
+    "title": "朴时宇Instagram单人直播（白色INUFF文化衫）；金允植&朴时宇澳门飞往首尔",
+    "description": "朴时宇Instagram单人直播（白色INUFF文化衫）；金允植&朴时宇澳门飞往首尔",
     "activities": [
       {
         "text": "朴时宇Instagram单人直播（白色INUFF文化衫）",
@@ -626,7 +670,7 @@ globalThis.ScheduleArchive = [
         "artist": "psw"
       },
       {
-        "text": "金允植、朴时宇从澳门前往首尔",
+        "text": "金允植&朴时宇澳门飞往首尔",
         "category": "travel",
         "artist": "both"
       }
@@ -644,11 +688,11 @@ globalThis.ScheduleArchive = [
     "categories": [
       "travel"
     ],
-    "title": "朴时宇从首尔前往上海",
-    "description": "朴时宇从首尔前往上海",
+    "title": "朴时宇首尔飞往上海",
+    "description": "朴时宇首尔飞往上海",
     "activities": [
       {
-        "text": "朴时宇从首尔前往上海",
+        "text": "朴时宇首尔飞往上海",
         "category": "travel",
         "artist": "psw"
       }
@@ -666,11 +710,11 @@ globalThis.ScheduleArchive = [
     "categories": [
       "travel"
     ],
-    "title": "朴时宇从上海前往首尔",
-    "description": "朴时宇从上海前往首尔",
+    "title": "朴时宇上海飞往首尔",
+    "description": "朴时宇上海飞往首尔",
     "activities": [
       {
-        "text": "朴时宇从上海前往首尔",
+        "text": "朴时宇上海飞往首尔",
         "category": "travel",
         "artist": "psw"
       }
@@ -781,11 +825,11 @@ globalThis.ScheduleArchive = [
     "categories": [
       "live"
     ],
-    "title": "金允植、朴时宇Fromm双人直播",
-    "description": "金允植、朴时宇Fromm双人直播",
+    "title": "金允植&朴时宇Fromm双人直播",
+    "description": "金允植&朴时宇Fromm双人直播",
     "activities": [
       {
-        "text": "金允植、朴时宇Fromm双人直播",
+        "text": "金允植&朴时宇Fromm双人直播",
         "category": "live",
         "artist": "both"
       }
@@ -803,11 +847,11 @@ globalThis.ScheduleArchive = [
     "categories": [
       "travel"
     ],
-    "title": "金允植、朴时宇从首尔前往曼谷",
-    "description": "金允植、朴时宇从首尔前往曼谷",
+    "title": "金允植&朴时宇首尔飞往曼谷",
+    "description": "金允植&朴时宇首尔飞往曼谷",
     "activities": [
       {
-        "text": "金允植、朴时宇从首尔前往曼谷",
+        "text": "金允植&朴时宇首尔飞往曼谷",
         "category": "travel",
         "artist": "both"
       }
@@ -823,20 +867,14 @@ globalThis.ScheduleArchive = [
     "artist": "both",
     "category": "fanmeeting",
     "categories": [
-      "fanmeeting",
-      "brand"
+      "fanmeeting"
     ],
-    "title": "《检察官的提案》曼谷见面会；SnackPaper（零食品牌）2.0商务开售",
-    "description": "《检察官的提案》曼谷见面会；SnackPaper（零食品牌）2.0商务开售",
+    "title": "《检察官的提案》曼谷见面会",
+    "description": "《检察官的提案》曼谷见面会",
     "activities": [
       {
         "text": "《检察官的提案》曼谷见面会",
         "category": "fanmeeting",
-        "artist": "both"
-      },
-      {
-        "text": "SnackPaper（零食品牌）2.0商务开售",
-        "category": "brand",
         "artist": "both"
       }
     ],
@@ -854,8 +892,8 @@ globalThis.ScheduleArchive = [
       "live",
       "travel"
     ],
-    "title": "朴时宇Fromm单人直播（粉色毛衣）；金允植从曼谷前往上海；朴时宇从曼谷前往雅加达；金允植从上海前往首尔",
-    "description": "朴时宇Fromm单人直播（粉色毛衣）；金允植从曼谷前往上海；朴时宇从曼谷前往雅加达；金允植从上海前往首尔",
+    "title": "朴时宇Fromm单人直播（粉色毛衣）；金允植曼谷飞往上海；朴时宇曼谷飞往雅加达；金允植上海飞往首尔",
+    "description": "朴时宇Fromm单人直播（粉色毛衣）；金允植曼谷飞往上海；朴时宇曼谷飞往雅加达；金允植上海飞往首尔",
     "activities": [
       {
         "text": "朴时宇Fromm单人直播（粉色毛衣）",
@@ -863,17 +901,17 @@ globalThis.ScheduleArchive = [
         "artist": "psw"
       },
       {
-        "text": "金允植从曼谷前往上海",
+        "text": "金允植曼谷飞往上海",
         "category": "travel",
         "artist": "kys"
       },
       {
-        "text": "朴时宇从曼谷前往雅加达",
+        "text": "朴时宇曼谷飞往雅加达",
         "category": "travel",
         "artist": "psw"
       },
       {
-        "text": "金允植从上海前往首尔",
+        "text": "金允植上海飞往首尔",
         "category": "travel",
         "artist": "kys"
       }
@@ -891,11 +929,11 @@ globalThis.ScheduleArchive = [
     "categories": [
       "travel"
     ],
-    "title": "朴时宇从雅加达前往首尔",
-    "description": "朴时宇从雅加达前往首尔",
+    "title": "朴时宇雅加达飞往首尔",
+    "description": "朴时宇雅加达飞往首尔",
     "activities": [
       {
-        "text": "朴时宇从雅加达前往首尔",
+        "text": "朴时宇雅加达飞往首尔",
         "category": "travel",
         "artist": "psw"
       }
@@ -913,11 +951,11 @@ globalThis.ScheduleArchive = [
     "categories": [
       "travel"
     ],
-    "title": "金允植、朴时宇从首尔前往香港",
-    "description": "金允植、朴时宇从首尔前往香港",
+    "title": "金允植&朴时宇首尔飞往香港",
+    "description": "金允植&朴时宇首尔飞往香港",
     "activities": [
       {
-        "text": "金允植、朴时宇从首尔前往香港",
+        "text": "金允植&朴时宇首尔飞往香港",
         "category": "travel",
         "artist": "both"
       }
@@ -980,8 +1018,8 @@ globalThis.ScheduleArchive = [
       "live",
       "travel"
     ],
-    "title": "朴时宇Instagram单人直播（黑色长袖眼镜）；金允植、朴时宇从香港前往首尔",
-    "description": "朴时宇Instagram单人直播（黑色长袖眼镜）；金允植、朴时宇从香港前往首尔",
+    "title": "朴时宇Instagram单人直播（黑色长袖眼镜）；金允植&朴时宇香港飞往首尔",
+    "description": "朴时宇Instagram单人直播（黑色长袖眼镜）；金允植&朴时宇香港飞往首尔",
     "activities": [
       {
         "text": "朴时宇Instagram单人直播（黑色长袖眼镜）",
@@ -989,7 +1027,7 @@ globalThis.ScheduleArchive = [
         "artist": "psw"
       },
       {
-        "text": "金允植、朴时宇从香港前往首尔",
+        "text": "金允植&朴时宇香港飞往首尔",
         "category": "travel",
         "artist": "both"
       }
@@ -1007,11 +1045,11 @@ globalThis.ScheduleArchive = [
     "categories": [
       "travel"
     ],
-    "title": "朴时宇从首尔前往上海",
-    "description": "朴时宇从首尔前往上海",
+    "title": "朴时宇首尔飞往上海",
+    "description": "朴时宇首尔飞往上海",
     "activities": [
       {
-        "text": "朴时宇从首尔前往上海",
+        "text": "朴时宇首尔飞往上海",
         "category": "travel",
         "artist": "psw"
       }
@@ -1030,11 +1068,11 @@ globalThis.ScheduleArchive = [
       "travel",
       "live"
     ],
-    "title": "朴时宇从上海前往首尔；金允植Instagram单人直播（黑色长袖）",
-    "description": "朴时宇从上海前往首尔；金允植Instagram单人直播（黑色长袖）",
+    "title": "朴时宇上海飞往首尔；金允植Instagram单人直播（黑色长袖）",
+    "description": "朴时宇上海飞往首尔；金允植Instagram单人直播（黑色长袖）",
     "activities": [
       {
-        "text": "朴时宇从上海前往首尔",
+        "text": "朴时宇上海飞往首尔",
         "category": "travel",
         "artist": "psw"
       },
@@ -1224,8 +1262,8 @@ globalThis.ScheduleArchive = [
       "travel",
       "live"
     ],
-    "title": "金允植首尔飞往上海；朴时宇微店单人直播；金允植小红书单人直播",
-    "description": "金允植首尔飞往上海；朴时宇微店单人直播；金允植小红书单人直播",
+    "title": "金允植首尔飞往上海；朴时宇微店单人直播",
+    "description": "金允植首尔飞往上海；朴时宇微店单人直播",
     "activities": [
       {
         "text": "金允植首尔飞往上海",
@@ -1236,11 +1274,6 @@ globalThis.ScheduleArchive = [
         "text": "朴时宇微店单人直播",
         "category": "live",
         "artist": "psw"
-      },
-      {
-        "text": "金允植小红书单人直播",
-        "category": "live",
-        "artist": "kys"
       }
     ],
     "source": "用户提供的新版 Schedule（resource/Schedule/schedule.md）",
@@ -1306,18 +1339,13 @@ globalThis.ScheduleArchive = [
     "categories": [
       "travel"
     ],
-    "title": "金允植首尔飞往巴黎；朴时宇首尔飞往巴黎",
-    "description": "金允植首尔飞往巴黎；朴时宇首尔飞往巴黎",
+    "title": "金允植&朴时宇首尔飞往巴黎",
+    "description": "金允植&朴时宇首尔飞往巴黎",
     "activities": [
       {
-        "text": "金允植首尔飞往巴黎",
+        "text": "金允植&朴时宇首尔飞往巴黎",
         "category": "travel",
-        "artist": "kys"
-      },
-      {
-        "text": "朴时宇首尔飞往巴黎",
-        "category": "travel",
-        "artist": "psw"
+        "artist": "both"
       }
     ],
     "source": "用户提供的新版 Schedule（resource/Schedule/schedule.md）",
@@ -1393,18 +1421,13 @@ globalThis.ScheduleArchive = [
     "categories": [
       "travel"
     ],
-    "title": "金允植巴黎飞往首尔；朴时宇巴黎飞往首尔",
-    "description": "金允植巴黎飞往首尔；朴时宇巴黎飞往首尔",
+    "title": "金允植&朴时宇巴黎飞往首尔",
+    "description": "金允植&朴时宇巴黎飞往首尔",
     "activities": [
       {
-        "text": "金允植巴黎飞往首尔",
+        "text": "金允植&朴时宇巴黎飞往首尔",
         "category": "travel",
-        "artist": "kys"
-      },
-      {
-        "text": "朴时宇巴黎飞往首尔",
-        "category": "travel",
-        "artist": "psw"
+        "artist": "both"
       }
     ],
     "source": "用户提供的新版 Schedule（resource/Schedule/schedule.md）",
@@ -1455,6 +1478,28 @@ globalThis.ScheduleArchive = [
     "image": ""
   },
   {
+    "id": "sc-2026-10-15",
+    "type": "schedule",
+    "date": "2026-10-15",
+    "endDate": "2026-10-15",
+    "artist": "psw",
+    "category": "activity",
+    "categories": [
+      "activity"
+    ],
+    "title": "朴时宇出席《Shall We Run》电影试映会",
+    "description": "朴时宇出席《Shall We Run》电影试映会",
+    "activities": [
+      {
+        "text": "朴时宇出席《Shall We Run》电影试映会",
+        "category": "activity",
+        "artist": "psw"
+      }
+    ],
+    "source": "用户提供的新版 Schedule（resource/Schedule/schedule.md）",
+    "image": ""
+  },
+  {
     "id": "sc-2026-10-17",
     "type": "schedule",
     "date": "2026-10-17",
@@ -1464,18 +1509,13 @@ globalThis.ScheduleArchive = [
     "categories": [
       "travel"
     ],
-    "title": "金允植首尔飞往澳门；朴时宇首尔飞往澳门",
-    "description": "金允植首尔飞往澳门；朴时宇首尔飞往澳门",
+    "title": "金允植&朴时宇首尔飞往澳门",
+    "description": "金允植&朴时宇首尔飞往澳门",
     "activities": [
       {
-        "text": "金允植首尔飞往澳门",
+        "text": "金允植&朴时宇首尔飞往澳门",
         "category": "travel",
-        "artist": "kys"
-      },
-      {
-        "text": "朴时宇首尔飞往澳门",
-        "category": "travel",
-        "artist": "psw"
+        "artist": "both"
       }
     ],
     "source": "用户提供的新版 Schedule（resource/Schedule/schedule.md）",
@@ -1514,18 +1554,13 @@ globalThis.ScheduleArchive = [
       "travel",
       "live"
     ],
-    "title": "金允植澳门飞往首尔；朴时宇澳门飞往首尔；朴时宇Fromm单人直播",
-    "description": "金允植澳门飞往首尔；朴时宇澳门飞往首尔；朴时宇Fromm单人直播",
+    "title": "金允植&朴时宇澳门飞往首尔；朴时宇Fromm单人直播",
+    "description": "金允植&朴时宇澳门飞往首尔；朴时宇Fromm单人直播",
     "activities": [
       {
-        "text": "金允植澳门飞往首尔",
+        "text": "金允植&朴时宇澳门飞往首尔",
         "category": "travel",
-        "artist": "kys"
-      },
-      {
-        "text": "朴时宇澳门飞往首尔",
-        "category": "travel",
-        "artist": "psw"
+        "artist": "both"
       },
       {
         "text": "朴时宇Fromm单人直播",
@@ -1640,18 +1675,13 @@ globalThis.ScheduleArchive = [
     "categories": [
       "travel"
     ],
-    "title": "金允植首尔飞往曼谷；朴时宇首尔飞往曼谷",
-    "description": "金允植首尔飞往曼谷；朴时宇首尔飞往曼谷",
+    "title": "金允植&朴时宇首尔飞往曼谷",
+    "description": "金允植&朴时宇首尔飞往曼谷",
     "activities": [
       {
-        "text": "金允植首尔飞往曼谷",
+        "text": "金允植&朴时宇首尔飞往曼谷",
         "category": "travel",
-        "artist": "kys"
-      },
-      {
-        "text": "朴时宇首尔飞往曼谷",
-        "category": "travel",
-        "artist": "psw"
+        "artist": "both"
       }
     ],
     "source": "用户提供的新版 Schedule（resource/Schedule/schedule.md）",
@@ -1665,15 +1695,92 @@ globalThis.ScheduleArchive = [
     "artist": "both",
     "category": "fanmeeting",
     "categories": [
-      "fanmeeting"
+      "fanmeeting",
+      "live"
     ],
-    "title": "《检察官的提案》曼谷见面会",
-    "description": "《检察官的提案》曼谷见面会",
+    "title": "《检察官的提案》曼谷见面会；朴时宇Instagram单人直播",
+    "description": "《检察官的提案》曼谷见面会；朴时宇Instagram单人直播",
     "activities": [
       {
         "text": "《检察官的提案》曼谷见面会",
         "category": "fanmeeting",
         "artist": "both"
+      },
+      {
+        "text": "朴时宇Instagram单人直播",
+        "category": "live",
+        "artist": "psw"
+      }
+    ],
+    "source": "用户提供的新版 Schedule（resource/Schedule/schedule.md）",
+    "image": ""
+  },
+  {
+    "id": "sc-2026-11-01",
+    "type": "schedule",
+    "date": "2026-11-01",
+    "endDate": "2026-11-01",
+    "artist": "both",
+    "category": "travel",
+    "categories": [
+      "travel"
+    ],
+    "title": "金允植曼谷飞往上海；朴时宇曼谷飞往首尔",
+    "description": "金允植曼谷飞往上海；朴时宇曼谷飞往首尔",
+    "activities": [
+      {
+        "text": "金允植曼谷飞往上海",
+        "category": "travel",
+        "artist": "kys"
+      },
+      {
+        "text": "朴时宇曼谷飞往首尔",
+        "category": "travel",
+        "artist": "psw"
+      }
+    ],
+    "source": "用户提供的新版 Schedule（resource/Schedule/schedule.md）",
+    "image": ""
+  },
+  {
+    "id": "sc-2026-11-02",
+    "type": "schedule",
+    "date": "2026-11-02",
+    "endDate": "2026-11-02",
+    "artist": "kys",
+    "category": "travel",
+    "categories": [
+      "travel"
+    ],
+    "title": "金允植上海飞往首尔",
+    "description": "金允植上海飞往首尔",
+    "activities": [
+      {
+        "text": "金允植上海飞往首尔",
+        "category": "travel",
+        "artist": "kys"
+      }
+    ],
+    "source": "用户提供的新版 Schedule（resource/Schedule/schedule.md）",
+    "image": ""
+  },
+  {
+    "id": "sc-2026-11-14",
+    "type": "schedule",
+    "date": "2026-11-14",
+    "endDate": "2026-11-14",
+    "artist": "psw",
+    "category": "activity",
+    "categories": [
+      "activity"
+    ],
+    "title": "朴时宇出席MMA2026（颁奖嘉宾）",
+    "description": "朴时宇出席MMA2026（颁奖嘉宾）",
+    "activities": [
+      {
+        "text": "朴时宇出席MMA2026（颁奖嘉宾）",
+        "category": "activity",
+        "artist": "psw"
       }
     ],
     "source": "用户提供的新版 Schedule（resource/Schedule/schedule.md）",

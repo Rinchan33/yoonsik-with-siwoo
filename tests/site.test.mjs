@@ -24,7 +24,7 @@ test('跨日活动状态包含最后一天，倒计时不受本地时区影响',
 test('中英文搜索、多关键词、日期和空结果', () => {
   assert.ok(U.search('澳门').length >= 2);
   assert.equal(U.search('MACAU').length, 2);
-  assert.equal(U.search('澳门 2026-10').length, 6);
+  assert.equal(U.search('澳门 2026-10').length, 5);
   assert.equal(U.search('Madame Figaro')[0].artist, 'both');
   assert.equal(U.search('不存在的条目').length, 0);
   assert.equal(U.search('2026-09-12').find(e=>e.type==='live').type, 'live');
@@ -59,7 +59,7 @@ test('新版时间表保留源稿，时间轴按活动拆分', async () => {
   const source = await readFile(new URL('../resource/Schedule/schedule.md', import.meta.url), 'utf8');
   const lines = source.split(/\r?\n/).filter(line => /^2026\./.test(line));
   assert.equal(D.archive.filter(row => row.activities.some(a => !/开售|预售|发售/.test(a.text))).length, lines.length);
-  assert.equal(D.timeline.length, D.archive.reduce((sum, row) => sum + row.activities.filter(a => !/开售|预售|发售/.test(a.text)).length, 0));
+  assert.equal(D.timeline.length, D.archive.reduce((sum, row) => sum + U.mergeTravelActivities(row.activities).filter(a => !/开售|预售|发售/.test(a.text)).length, 0));
   assert.equal(new Set(D.timeline.map(e => e.date)).size, lines.length);
   for (const line of lines) {
     const [, y, m, d, text] = line.match(/^(\d{4})\.(\d{1,2})\.(\d{1,2})[：:](.+)$/);
@@ -89,9 +89,16 @@ test('新版时间表支持同日多类型及人物筛选', () => {
   assert.equal(U.filterSchedule({artist:'both', query:'2026-08-30'}).length,0);
   assert.equal(U.filterSchedule({artist:'kys', category:'live', query:'2026-08-30'}).length,0);
 });
-test('三本双人杂志与三份文字采访', async () => {
-  assert.equal(D.magazines.length,3);
-  assert.ok(D.magazines.every(m=>m.artist==='both'));
+test('七本杂志与完整文字采访', async () => {
+  assert.equal(D.magazines.length,7);
+  assert.deepEqual(D.magazines.map(m=>m.id),['mag-figaro','mag-loading','mag-powercircles','mag-superelle','mag-kino','mag-bazaarmen','mag-nylon']);
+  assert.equal(D.magazines[4].interview.qa.length,19);
+  assert.ok(U.search('瞬间移动').some(m=>m.id==='mag-kino'));
+  assert.equal(D.magazines.filter(m=>m.artist==='both').length,3);
+  const solo=D.magazines.find(m=>m.id==='mag-superelle');
+  assert.equal(solo.artist,'kys');
+  assert.equal(solo.interview.qa.length,7);
+  assert.ok(U.search('妥瑞氏症').some(m=>m.id===solo.id));
   const figaro=D.magazines.find(m=>m.id==='mag-figaro');
   const loading=D.magazines.find(m=>m.id==='mag-loading');
   assert.equal(figaro.interview.qa.length,11);
@@ -100,7 +107,7 @@ test('三本双人杂志与三份文字采访', async () => {
   assert.equal(D.magazines.find(m=>m.id==='mag-powercircles').interview.qa.length,7);
   assert.ok(U.search('三植').some(m=>m.id==='mag-powercircles'));
   for(const m of D.magazines){
-    assert.equal(m.gallery.length,11);
+    assert.equal(m.gallery.length,m.id==='mag-nylon'?17:['mag-kino','mag-bazaarmen'].includes(m.id)?12:m.id==='mag-superelle'?9:11);
     await access(new URL('../'+m.interview.sourceText,import.meta.url));
   }
   assert.ok(U.search('poker face').some(m=>m.id==='mag-figaro'));
@@ -152,7 +159,7 @@ test('行程排除开售，保留本人参与的拍摄和签名会', () => {
 
 test('作品分集文案和剧照同步，角色名统一', async () => {
   const work = D.works[0];
-  const source = await readFile(new URL('../resource/Profile/检察官的提案.md', import.meta.url), 'utf8');
+  const source = await readFile(new URL('../resource/Profile/作品/检察官的提案/检察官的提案.md', import.meta.url), 'utf8');
   assert.equal(work.episodes.length, 10);
   assert.equal(work.episodes.reduce((n,e)=>n+e.images.length,0),75);
   assert.ok(!/李彩河|李彩儿|李彩夏|李彩荷|周泰善|宋天空/.test(JSON.stringify(work)+source));
@@ -160,9 +167,22 @@ test('作品分集文案和剧照同步，角色名统一', async () => {
     assert.ok(source.includes(e.text));
     assert.ok(e.text.length >= 110 && e.text.length <= 230);
     for (const src of e.images) {
-      assert.ok(src.startsWith('resource/Profile/剧照/'+e.number+'/'));
+      assert.ok(src.startsWith('resource/Profile/作品/检察官的提案/剧照/'+e.number+'/'));
       await access(new URL('../'+src,import.meta.url));
     }
   }
   for(const c of work.characters) await access(new URL('../'+c.image,import.meta.url));
 });
+
+test('同日同路线出行合并，异路线和直播保持独立', () => {
+ const trip=U.filterSchedule({query:'2026-10-30',category:'travel'});
+ assert.equal(trip.length,1); assert.equal(trip[0].artist,'both');
+ assert.equal(U.filterSchedule({artist:'kys',query:'2026-10-30'}).length,0);
+ const separate=U.filterSchedule({query:'2026-11-01',category:'travel'});
+ assert.equal(separate.length,2);
+ assert.ok(separate.some(e=>e.artist==='kys'&&e.title.includes('曼谷飞往上海')));
+ const live=[{artist:'kys',category:'live',text:'金允植Fromm单人直播'},{artist:'psw',category:'live',text:'朴时宇Fromm单人直播'}];
+ assert.equal(U.mergeTravelActivities(live).length,2);
+});
+
+test('NYLON 收录七组单人问答并支持正文搜索',()=>{const m=D.magazines.find(m=>m.id==='mag-nylon');assert.equal(m.artist,'kys');assert.equal(m.coverCount,2);assert.equal(m.interview.qa.length,7);assert.ok(U.search('真心终会穿越时间').some(m=>m.id==='mag-nylon'));});

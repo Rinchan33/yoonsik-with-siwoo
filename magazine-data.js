@@ -1,4 +1,4 @@
-/* 采访文字汇总见 resource/Profile/三本杂志采访.md。
+/* 采访文字汇总见 resource/Profile/杂志/三本杂志采访.md。
  * gallery 只含封面与摄影画报；采访扫描图已移除。
  */
 (() => {
@@ -499,8 +499,534 @@
 ];
   const range = (first,last) => Array.from({length:last-first+1},(_,i)=>i+first);
   globalThis.MagazineArchive = [
-    { id:'mag-figaro', type:'magazine', artist:'both', title:'Madame Figaro', chinese:'费加罗', subtitle:'金允植 & 朴时宇 · 相遇正当时', date:'', issue:'2026 年 8 月刊', description:'Timely Encounter · 相遇正当时', image:'resource/Profile/双人杂志_费加罗封面_1.jpg', gallery:[...range(1,3).map(i=>`resource/Profile/双人杂志_费加罗封面_${i}.jpg`),...range(3,10).map(i=>`resource/Profile/双人杂志_费加罗内页_${i}.jpg`)], interview:{qa:figaroQA,sections:figaroArticle,sourceText:'resource/Profile/三本杂志采访.md'}, source:'用户提供的费加罗封面及两张文字内页' },
-    { id:'mag-loading', type:'magazine', artist:'both', title:'LOADING', chinese:'LOADING', subtitle:'金允植 & 朴时宇 · 时日绵长', date:'', issue:'双人刊 · 期号待补充', description:'Long Days · 时日绵长', image:'resource/Profile/双人杂志_loading_封面_1.jpg', gallery:[...range(1,3).map(i=>`resource/Profile/双人杂志_loading_封面_${i}.jpg`),...range(3,10).map(i=>`resource/Profile/双人杂志_loading_内页_${i}.jpg`)], interview:{qa:loadingQA,sections:[],sourceText:'resource/Profile/三本杂志采访.md'}, source:'用户提供的 LOADING 封面及两张文字内页' },
-    { id:'mag-powercircles', type:'magazine', artist:'both', title:'PowerCircles', chinese:'势界', subtitle:'金允植 & 朴时宇 · 日界相融，我们相拥', date:'2026-09', issue:'2026 年 9 月刊', description:'No Line on the Horizon', image:'resource/Profile/双人杂志_势界_封面_1.jpg', gallery:[...range(1,3).map(i=>`resource/Profile/双人杂志_势界_封面_${i}.jpg`),...range(3,10).map(i=>`resource/Profile/双人杂志_势界_内页_${i}.jpg`)], interview:{qa:powercirclesQA,sections:[],sourceText:'resource/Profile/三本杂志采访.md'}, source:'用户提供的势界封面、画报及两张采访内页' }
+    { id:'mag-figaro', type:'magazine', artist:'both', title:'Madame Figaro', chinese:'费加罗', subtitle:'金允植 & 朴时宇 · 相遇正当时', date:'', issue:'2026 年 8 月刊', description:'Timely Encounter · 相遇正当时', image:'resource/Profile/杂志/费加罗/双人杂志_费加罗封面_1.jpg', gallery:[...range(1,3).map(i=>`resource/Profile/杂志/费加罗/双人杂志_费加罗封面_${i}.jpg`),...range(3,10).map(i=>`resource/Profile/杂志/费加罗/双人杂志_费加罗内页_${i}.jpg`)], interview:{qa:figaroQA,sections:figaroArticle,sourceText:'resource/Profile/杂志/三本杂志采访.md'}, source:'用户提供的费加罗封面及两张文字内页' },
+    { id:'mag-loading', type:'magazine', artist:'both', title:'LOADING', chinese:'LOADING', subtitle:'金允植 & 朴时宇 · 时日绵长', date:'', issue:'双人刊 · 期号待补充', description:'Long Days · 时日绵长', image:'resource/Profile/杂志/LOADING/双人杂志_loading_封面_1.jpg', gallery:[...range(1,3).map(i=>`resource/Profile/杂志/LOADING/双人杂志_loading_封面_${i}.jpg`),...range(3,10).map(i=>`resource/Profile/杂志/LOADING/双人杂志_loading_内页_${i}.jpg`)], interview:{qa:loadingQA,sections:[],sourceText:'resource/Profile/杂志/三本杂志采访.md'}, source:'用户提供的 LOADING 封面及两张文字内页' },
+    { id:'mag-powercircles', type:'magazine', artist:'both', title:'PowerCircles', chinese:'势界', subtitle:'金允植 & 朴时宇 · 日界相融，我们相拥', date:'2026-09', issue:'2026 年 9 月刊', description:'No Line on the Horizon', image:'resource/Profile/杂志/势界/双人杂志_势界_封面_1.jpg', gallery:[...range(1,3).map(i=>`resource/Profile/杂志/势界/双人杂志_势界_封面_${i}.jpg`),...range(3,10).map(i=>`resource/Profile/杂志/势界/双人杂志_势界_内页_${i}.jpg`)], interview:{qa:powercirclesQA,sections:[],sourceText:'resource/Profile/杂志/三本杂志采访.md'}, source:'用户提供的势界封面、画报及两张采访内页' },
+    {
+  "id": "mag-superelle",
+  "type": "magazine",
+  "artist": "kys",
+  "title": "SuperELLE",
+  "chinese": "SuperELLE",
+  "subtitle": "金允植 · 一见倾心",
+  "date": "2026-09",
+  "issue": "2026 年 9 月刊",
+  "description": "Fall for Him · 一见倾心",
+  "image": "resource/Profile/杂志/SuperELLE/kys_单人杂志_SUPERELLE_封面_1.jpg",
+  "coverCount": 1,
+  "gallery": [
+    "resource/Profile/杂志/SuperELLE/kys_单人杂志_SUPERELLE_封面_1.jpg",
+    "resource/Profile/杂志/SuperELLE/kys_单人杂志_SUPERELLE_内页_1.jpg",
+    "resource/Profile/杂志/SuperELLE/kys_单人杂志_SUPERELLE_内页_2.jpg",
+    "resource/Profile/杂志/SuperELLE/kys_单人杂志_SUPERELLE_内页_3.jpg",
+    "resource/Profile/杂志/SuperELLE/kys_单人杂志_SUPERELLE_内页_4.jpg",
+    "resource/Profile/杂志/SuperELLE/kys_单人杂志_SUPERELLE_内页_5.jpg",
+    "resource/Profile/杂志/SuperELLE/kys_单人杂志_SUPERELLE_内页_6.jpg",
+    "resource/Profile/杂志/SuperELLE/kys_单人杂志_SUPERELLE_内页_7.jpg",
+    "resource/Profile/杂志/SuperELLE/kys_单人杂志_SUPERELLE_内页_8.jpg"
+  ],
+  "interview": {
+    "qa": [
+      {
+        "question": "每个人开始表演的契机都不太一样。对你来说，当初为什么会选择学习表演？一路走来，有没有哪个阶段让你觉得自己真正因为表演而成长了？",
+        "answers": [
+          {
+            "speaker": "kys",
+            "text": "我最初接触许多艺术活动，都是为了治疗妥瑞氏症，而表演也是其中之一。我一直有一个梦想，希望能够成为一名具有影响力的演员，为那些和曾经的我一样、正在经历困难的人们带来一些力量。有时候，我会突然意识到：“原来，我已经开始拥有一点点影响力了。”每当经历这样的瞬间，我都会觉得，无论作为演员，还是作为一个普通人，我都比过去成长了一些。"
+          }
+        ]
+      },
+      {
+        "question": "当遇到和自己性格反差很大的角色时，你通常会怎么理解、进入这个人物？",
+        "answers": [
+          {
+            "speaker": "kys",
+            "text": "我会尽可能去理解、去共情每一个角色。因为我觉得，要理解一个角色的行为，就必须先理解他的内心。每次准备作品的时候，我都会不断设想角色过去经历过什么，也会不断问自己：“他为什么会这样想？为什么会这样做？”我会一直尝试站在角色的角度去感受他的情绪、理解他的内心。"
+          }
+        ]
+      },
+      {
+        "question": "未来有没有特别想挑战的角色类型，或者一直想尝试的表演方向？你会主动规划自己的演员路线，还是更愿意顺其自然，遇到喜欢的作品就去尝试？",
+        "answers": [
+          {
+            "speaker": "kys",
+            "text": "只要有机会出演，我都会怀着感恩的心去挑战每一个角色。当然，我也希望自己能够成长为一名更优秀、更出色的演员。如果以后有机会的话，我很想演一个和自己性格非常相似的角色——阳光开朗、充满活力，还有一点点爱撒娇（笑）。"
+          }
+        ]
+      },
+      {
+        "question": "你的MBTI是INFP，你觉得和真实的自己符合吗？有没有哪些地方完全不像？",
+        "answers": [
+          {
+            "speaker": "kys",
+            "text": "我觉得自己就是一个非常典型的INFP。内向的性格有时候会成为我的优点，但很多时候也会让我觉得有些辛苦。因为演员这份工作需要和很多人一起合作，所以每次工作结束回到家，我几乎都会累到直接瘫倒（笑）。这大概也是为什么我那么爱睡觉的原因吧。"
+          }
+        ]
+      },
+      {
+        "question": "听说你很喜欢美食，几乎不挑食，是真的吗？最近吃到的一样让你印象深刻的美食是什么？平时最常吃什么？有没有什么食物是你一直不太能接受的？",
+        "answers": [
+          {
+            "speaker": "kys",
+            "text": "我几乎不挑食，基本什么都吃，尤其喜欢吃炸鸡，所以最近经常吃烤鸡，既比较适合控制饮食，又很好吃，可谓两全其美。如果说还有什么我一直没有尝试过、特别想挑战的食物，那应该就是皮蛋。我听说大家对皮蛋的评价非常两极，所以我也很好奇，自己到底会喜欢，还是会接受不了。"
+          }
+        ]
+      },
+      {
+        "question": "如果10年后的金允植看到今天这场采访，你希望他还记得现在的自己什么？",
+        "answers": [
+          {
+            "speaker": "kys",
+            "text": "我想，即使到了10年以后，我的人生目标应该依然不会改变。那就是——成为一个温暖、幸福的人。如果10年后的我再看到今天这场采访，我希望自己能够笑着对现在的自己说：“金允植，你一直没有忘记初心，也一直认真地生活着。”"
+          }
+        ]
+      },
+      {
+        "question": "你最近开通了小红书、微博账号，也是第一次面对中国媒体和读者。现在是什么心情？有没有特别期待的事情，或者为此做过什么准备？",
+        "answers": [
+          {
+            "speaker": "kys",
+            "text": "首先，我想真心向一直在中国支持我的粉丝表达感谢。说实话，直到现在，我还是觉得自己能够得到这么多人的喜爱，仿佛是在做一场美梦（笑）。大家给予我的关注和支持，对我来说都非常珍贵。我也希望未来能够和大家一起走很长很长的路。"
+          }
+        ]
+      }
+    ],
+    "sections": [],
+    "sourceText": "resource/Profile/杂志/SuperELLE/SuperELLE采访.md"
+  },
+  "source": "用户提供的 SuperELLE 封面、画报及采访文字页"
+},
+{
+  "id": "mag-kino",
+  "type": "magazine",
+  "artist": "psw",
+  "title": "KINO",
+  "chinese": "KINO",
+  "subtitle": "朴时宇 · 时至盛放 宇见万象",
+  "date": "",
+  "issue": "ISSUE 06",
+  "description": "SEE U IN BLOOM · 时至盛放 宇见万象",
+  "coverCount": 3,
+  "image": "resource/Profile/杂志/KINO/psw_单人杂志_KINO_封面_1.jpg",
+  "gallery": [
+    "resource/Profile/杂志/KINO/psw_单人杂志_KINO_封面_1.jpg",
+    "resource/Profile/杂志/KINO/psw_单人杂志_KINO_封面_2.jpg",
+    "resource/Profile/杂志/KINO/psw_单人杂志_KINO_封面_3.jpg",
+    "resource/Profile/杂志/KINO/psw_单人杂志_KINO_内页_1.jpg",
+    "resource/Profile/杂志/KINO/psw_单人杂志_KINO_内页_2.jpg",
+    "resource/Profile/杂志/KINO/psw_单人杂志_KINO_内页_3.jpg",
+    "resource/Profile/杂志/KINO/psw_单人杂志_KINO_内页_4.jpg",
+    "resource/Profile/杂志/KINO/psw_单人杂志_KINO_内页_5.jpg",
+    "resource/Profile/杂志/KINO/psw_单人杂志_KINO_内页_6.jpg",
+    "resource/Profile/杂志/KINO/psw_单人杂志_KINO_内页_7.jpg",
+    "resource/Profile/杂志/KINO/psw_单人杂志_KINO_内页_8.jpg",
+    "resource/Profile/杂志/KINO/psw_单人杂志_KINO_内页_9.jpg"
+  ],
+  "interview": {
+    "qa": [
+      {
+        "question": "有没有哪条留言让你特别印象深刻？",
+        "answers": [
+          {
+            "speaker": "psw",
+            "text": "有，就在采访前，看到有人问我有没有好好睡觉。其实我睡得很好。只是现在一边要做 INUFFCOMPANY 的代表，一边还要兼顾演员朴时宇这个身份。有时候确实会睡得比较少，不过因为有大家，每一天都过得很幸福。"
+          }
+        ]
+      },
+      {
+        "question": "最近在学中文吗？最近学会的单词是什么？",
+        "answers": [
+          {
+            "speaker": "psw",
+            "text": "嗯……早安。还有，幸福。对吗？"
+          }
+        ]
+      },
+      {
+        "question": "对你来说，完美的一天是什么样的？如果安排一天的行程，会怎么度过？",
+        "answers": [
+          {
+            "speaker": "psw",
+            "text": "因为我是ESTP，只要把当天该完成的事情都认真做好，睡觉前再去看看 FROMM（粉丝平台），就会觉得“今天圆满结束了”，然后安心入睡。"
+          }
+        ]
+      },
+      {
+        "question": "最近有什么有趣的 TMI 吗？",
+        "answers": [
+          {
+            "speaker": "psw",
+            "text": "TMI 的话，在餐厅里吃了鸭蛋。因为我其实不太能吃香料味很重的食物，不过最近觉得尝试新的食物、挑战一些新事物特别有意思。"
+          }
+        ]
+      },
+      {
+        "question": "如果可以提前看到未来，你最想看到几岁的自己？",
+        "answers": [
+          {
+            "speaker": "psw",
+            "text": "大概三十岁后半的时候吧。想知道自己现在想完成的事情是不是都实现了，还有自己变得有多么坚强了。非常想知道。"
+          }
+        ]
+      },
+      {
+        "question": "如果暂时放下周围所有人的期待，现在最想实现的一件事是什么？",
+        "answers": [
+          {
+            "speaker": "psw",
+            "text": "与其说放下期待，我更希望能够没有任何限制地见到更多粉丝。有时候粉丝来了，却没能见到我就回去了，我真的会觉得很遗憾。所以希望以后能不受限制地和大家见面。"
+          }
+        ]
+      },
+      {
+        "question": "平时私服和镜头前的造型差别很大，你更喜欢舒适简约的风格，还是有设计感、有亮点的风格？",
+        "answers": [
+          {
+            "speaker": "psw",
+            "text": "我喜欢简约一点，但会有一个小亮点的那种风格。"
+          }
+        ]
+      },
+      {
+        "question": "对自己说一些称赞和鼓励的话。",
+        "answers": [
+          {
+            "speaker": "psw",
+            "text": "首先，真的辛苦了，朴时宇。现在才是真正的开始。希望今后的每一天都能认真珍惜，也希望能做一个始终如一的人。你现在已经做得很好了，以后一定会越来越好。加油！"
+          }
+        ]
+      },
+      {
+        "question": "最近最能代表时宇日常生活的关键词是什么？",
+        "answers": [
+          {
+            "speaker": "psw",
+            "text": "西瓜？"
+          }
+        ]
+      },
+      {
+        "question": "今后最想挑战的角色是什么？",
+        "answers": [
+          {
+            "speaker": "psw",
+            "text": "浪漫爱情剧"
+          }
+        ]
+      },
+      {
+        "question": "如果用一种颜色来表达现在的自己，会是什么颜色？",
+        "answers": [
+          {
+            "speaker": "psw",
+            "text": "白色"
+          }
+        ]
+      },
+      {
+        "question": "最近最想和朋友们一起做的事情是什么？",
+        "answers": [
+          {
+            "speaker": "psw",
+            "text": "去旅行"
+          }
+        ]
+      },
+      {
+        "question": "最喜欢的数字是什么？",
+        "answers": [
+          {
+            "speaker": "psw",
+            "text": "0"
+          }
+        ]
+      },
+      {
+        "question": "如果可以拥有一种超能力，你想要什么能力？",
+        "answers": [
+          {
+            "speaker": "psw",
+            "text": "瞬间移动"
+          }
+        ]
+      },
+      {
+        "question": "如果有了喜欢的人，你是会主动告白的类型，还是默默暗恋的类型？",
+        "answers": [
+          {
+            "speaker": "psw",
+            "text": "我属于默默暗恋的类型"
+          }
+        ]
+      },
+      {
+        "question": "到目前为止，做过的事情中最让你感到自豪的是什么？",
+        "answers": [
+          {
+            "speaker": "psw",
+            "text": "拍摄KINO杂志这件事"
+          }
+        ]
+      },
+      {
+        "question": "最近最心动的瞬间是什么时候？",
+        "answers": [
+          {
+            "speaker": "psw",
+            "text": "就是现在这一刻"
+          }
+        ]
+      },
+      {
+        "question": "请推荐一首你最喜欢的歌曲",
+        "answers": [
+          {
+            "speaker": "psw",
+            "text": "RIIZE的《LOVE 119》"
+          }
+        ]
+      },
+      {
+        "question": "最喜欢的颜色是什么？",
+        "answers": [
+          {
+            "speaker": "psw",
+            "text": "最喜欢的颜色是棕色"
+          }
+        ]
+      }
+    ],
+    "sections": [
+      {
+        "title": "手写档案",
+        "paragraphs": [
+          "姓名：Park Si woo",
+          "昵称：박슈",
+          "MBTI：ESTP",
+          "生日：2001.02.05",
+          "年龄：25（原刊记录）",
+          "最喜欢的表情：兔子、胡萝卜（手绘）",
+          "最喜欢的：FANS ♥",
+          "人生哲学：하고 싶은 대로 살자!!（译：按自己想要的方式生活吧！！）",
+          "愿望清单：신인상 받기（译：获得新人奖）",
+          "此刻心中所想：你",
+          "魅力点：솔직하다!!（译：坦率！！）"
+        ]
+      },
+      {
+        "title": "有些抵达没有预告",
+        "paragraphs": [
+          "有些抵达没有预告。",
+          "只是时间缓慢向前，",
+          "经过不同的风景，",
+          "也在每次转身里遇见新的自己。",
+          "再抬头时，",
+          "新的故事已经在眼前展开。",
+          "盛放不是被安排好的时刻。",
+          "是他终于站在自己的坐标里，",
+          "让一路走来的每一步，",
+          "都在此刻有了回应。"
+        ]
+      },
+      {
+        "title": "时至盛放 宇见万象",
+        "paragraphs": [
+          "我们所说的盛放，\n并不是某一天突然变得耀眼。",
+          "是生长在每一个认真走过的日子里，\n也来自一次次重新选择以后，\n依然愿意向前的勇气。",
+          "也是被更多人看见时，\n仍然保留着自己的节拍。",
+          "愿你在每一个新的角色里，\n继续打开新的世界。",
+          "也愿所有翻开这本杂志的人，\n都能在你的故事里看见——\n生长可以安静，\n坚定也可以柔软。",
+          "时至盛放 宇见万象。\nSEE U IN BLOOM.\nSEE U, STILL IN BLOOM."
+        ]
+      }
+    ],
+    "sourceText": "resource/Profile/杂志/KINO/KINO采访.md"
+  },
+  "source": "用户提供的 KINO 封面、画报、手写档案及采访文字页"
+},
+{
+  "id": "mag-bazaarmen",
+  "type": "magazine",
+  "artist": "psw",
+  "title": "BAZAARMEN",
+  "chinese": "芭莎男士",
+  "subtitle": "朴时宇 · 待解新章",
+  "date": "2026-10",
+  "issue": "2026 年 10 月刊",
+  "description": "朴时宇 · 待解新章",
+  "coverCount": 3,
+  "image": "resource/Profile/杂志/BAZAARMEN/psw_单人杂志_BAZAARMEN_封面_1.jpg",
+  "gallery": [
+    "resource/Profile/杂志/BAZAARMEN/psw_单人杂志_BAZAARMEN_封面_1.jpg",
+    "resource/Profile/杂志/BAZAARMEN/psw_单人杂志_BAZAARMEN_封面_2.jpg",
+    "resource/Profile/杂志/BAZAARMEN/psw_单人杂志_BAZAARMEN_封面_3.jpg",
+    "resource/Profile/杂志/BAZAARMEN/psw_单人杂志_BAZAARMEN_内页_1.jpg",
+    "resource/Profile/杂志/BAZAARMEN/psw_单人杂志_BAZAARMEN_内页_2.jpg",
+    "resource/Profile/杂志/BAZAARMEN/psw_单人杂志_BAZAARMEN_内页_3.jpg",
+    "resource/Profile/杂志/BAZAARMEN/psw_单人杂志_BAZAARMEN_内页_4.jpg",
+    "resource/Profile/杂志/BAZAARMEN/psw_单人杂志_BAZAARMEN_内页_5.jpg",
+    "resource/Profile/杂志/BAZAARMEN/psw_单人杂志_BAZAARMEN_内页_6.jpg",
+    "resource/Profile/杂志/BAZAARMEN/psw_单人杂志_BAZAARMEN_内页_7.jpg",
+    "resource/Profile/杂志/BAZAARMEN/psw_单人杂志_BAZAARMEN_内页_8.jpg",
+    "resource/Profile/杂志/BAZAARMEN/psw_单人杂志_BAZAARMEN_内页_9.jpg"
+  ],
+  "interview": {
+    "qa": [],
+    "sections": [
+      {
+        "title": "待解新章",
+        "paragraphs": [
+          "九月末的京郊，夏末的绿草刚割过一茬，空气里即将有秋意，然而白杨的叶子翻出一道道的银光，时间似乎仍停留在夏末的高饱和氛围，朴时宇走进我们的镜头里，仿佛同时带来一段电影情节，大学社团的一次郊游，而他是那个时常走在队伍中间靠前，时而需要照顾领队，时而也会留意身后学弟妹的那个角色。",
+          "今年七月，朴时宇第一次来到中国上海，夏夜城市的热切与首尔无异，粉丝们的热情仍令他记忆犹新，而时隔两个月，此时清爽的秋园又让他心生许多留恋，“很想多留一点时间好好逛一逛。”朴时宇一边摆弄着拍摄现场的兔子道具，又认真补上，“下次一定专门留出时间，更悠闲地好好看看北京。”"
+        ]
+      },
+      {
+        "title": "“永远在一起”",
+        "paragraphs": [
+          "七月在上海，时宇收到一大摞粉丝手写的信，带回韩国后读到凌晨，足足读了三天。",
+          "那些信里，很多是海外粉丝一笔一画用韩语写下的。再聊起这件事，他的说法没变过：“不仅仅是信的数量多，更让我感激的是，原来有这么多人愿意花时间亲手写下心意，再传达给我。”",
+          "在一个即时通讯几秒传达的时代，手写信的分量也会让朴时宇有些战战兢兢，要以怎样的表现回馈这样的信任，踏入演艺界，今年他明显感觉到收获的各种爱意和信任在加剧。",
+          "粉丝见面会一路从澳门开到首尔、曼谷、香港。他学中文的清单也在变长：先是“我想你了”“早安”“晚安”，最近新学的一句是“永远在一起”。说得还带点生涩，落点却是他个人内心的期待。",
+          "永远在一起，在朴时宇看来，这是一个非常好的祝福，他很喜欢，在韩国平时也会经常对粉丝说，他一直想知道用中文怎么表达，这种最简单和直白的承诺，或许不太切合当下环境的迅疾氛围，但朴时宇会觉得有时正是这样最简单的心愿和祝福，才会更容易拉近人与人之间的距离，永远意味着彼此可以期待的时间会很长，相伴的路会很久。",
+          "以后也想继续说，永远在一起。"
+        ]
+      },
+      {
+        "title": "不确定 很有趣",
+        "paragraphs": [
+          "如果把朴时宇的人生上一个阶段的时间表拉出来，你会觉得像在看一张反复改签的车票：2019年《Produce X 101》，2021年《野生偶像》，2022年以BLANK2Y成员身份出道，次年退团，2024年又站上《星光闪耀的少年》的舞台。爱豆这条路走了好几年，但谁都没有忘记，他曾经是一名田径运动员，二者身份的转换似乎还未全然隔绝，那条初中就开始起跑的跑道仿佛早就教会他，努力不会立刻兑现。",
+          "“这些年经历过很多辛苦、想要放弃的瞬间，但我一直告诉自己，不要轻易放弃。毕竟人生的事情谁也说不准嘛！”",
+          "说不准的事，今年真的来了。",
+          "首先是在戏剧方面，今年朴时宇第一次真正以演员的身份走进一部作品，在镜头前体验了一段与自己截然不同的人生。第一次正式演戏就担纲主角，紧张是自然的，朴时宇用了一种最简单的方式去克服——老老实实为角色做准备。每天开拍前把角色的特性一条条写上白板，揣摩到深夜，次日到了现场，再老老实实听导演和前辈的意见。",
+          "“最大的压力来自需要带着整部作品往前走这件事，我经常会想，自己到底有没有做好。”",
+          "作品播出后，涌来的关注出乎他和团队的预期。最直观的变化发生在直播间里——今年二月，他的生日直播只有十四个人观看；几个月后，这个数字变成了一万。",
+          "紧随其后是来自时尚圈的问候和关注，九月，他受邀出席香港时装周期间的CENTRESTAGE 2026，随后又紧锣密鼓踏上米兰时装周，连续两天坐在MM6 Maison Margiela和Marni两场大秀的前排，秀场照片被盖蒂图片社收录，他和Marni的话题标签当天就登上了越南区实时热搜第一。而米兰之后，巴黎时装周已经在日程表上等着他。",
+          "突如其来的好运，朴时宇本人却没有立刻陷入一帆风顺的狂喜，更多惦记的却是遗憾。“总是会觉得任何工作还有可以上升的空间，还可以呈现更好的自己给大家。”",
+          "无论是戏剧还是平面拍摄或任何工作，朴时宇告诉我们，他总是在一件事情刚刚结束，就已经开始思考如果还有下次，他该怎么做。目前的好奇和兴趣比较多聚焦在戏剧，想试试浪漫喜剧，想演明亮有趣的角色，但无论什么角色，对他而言都是一种全新的体验，甚至是挑战。许多人面对未知和挑战，都会心生犹豫，但朴时宇说：“我通常不太会随便让自己犹豫，与其纠结，我习惯选择先行动起来。”"
+        ]
+      },
+      {
+        "title": "人生的新跑道",
+        "paragraphs": [
+          "今年五月，时宇干了一件偶像出身的演员很少干的事：成立自己的公司INUFF COMPANY，自己出任代表理事。名字取自“Enough”，口号是“Grow Beyond Enough”，超越足够。",
+          "公司自我介绍的第一页写着：“并非因为完美才开始，而是因为相信可能性才开始。”",
+          "六月，INUFF COMPANY推出新人演员选秀的公告——当年那个想要一个好环境的练习生，现在开始替别人造环境。",
+          "“以前只需要考虑自己的活动，现在不仅要考虑一起工作的艺人，也要考虑公司的员工，肩上的责任更重了。”",
+          "但两重身份他并不觉得打架，多年演员生涯攒下的那些亲身体会，恰好让他更懂旗下艺人正在经历什么。",
+          "“为了把两个身份都做好，我现在也还在不断学习。”",
+          "甚至连那句让粉丝熟悉的座右铭也跟着更新了。过去的朴时宇是“Just do what makes you happy”，如今则变成了——“按照自己想要的方式生活——Live the way you want to live”。",
+          "相近的意思，却明显可以感觉到面前的青年正在朝前走出一大步。超越足够的终点站在哪里？朴时宇的答案很朴素：“不一定意味着要取得多么巨大的成功，而是不停下来，继续学习，继续成长，不断成为比现在更好一点的自己。”",
+          "这天收工后，我们又一次想起那个拍摄前关于电影镜头的比喻。在团队拥簇中离开的朴时宇，的确是队伍里那个走在中间靠前的人，这个位置，仿佛恰如其分对应着他此刻人生的坐标，朴时宇这个名字，或许已然跟随着少年意气，却有一些稚嫩正在退却，前面有作品和前辈，身后有粉丝，以及从今往后要与他一起做梦的年轻人，当朴时宇变成朴代表时，也意味着更大的责任即将担负，和所有先前未知的旅程一样，朴时宇对于这样的转变，保持着一贯乐观的期待，如果按照想要的方式继续下去，那么属于自己的答案迟早会在目的地出现。",
+          "“永远在一起”，是递给别人的约定；“人生的事情谁也说不准”，是留给自己的余地；“按照自己想要的方式生活”，是接下来正在践行的目标。",
+          "三句话，刚好分别说给了过去、此刻与未来，组成了当下一个全新的、尚未完成的朴时宇，和所有喜爱他的人一样，我们为此怀抱祝福，也期待看见跑上下一个赛道的朴时宇，和他的答案。"
+        ]
+      }
+    ],
+    "sourceText": "resource/Profile/杂志/BAZAARMEN/BAZAARMEN采访.md"
+  },
+  "source": "用户提供的 BAZAARMEN 封面、画报及第65、71页专访"
+},
+{
+  "id": "mag-nylon",
+  "type": "magazine",
+  "artist": "kys",
+  "title": "NYLON",
+  "chinese": "尼龙",
+  "subtitle": "金允植 · 千面之下 皆是我",
+  "date": "2026-10",
+  "issue": "2026 年 10 月刊",
+  "description": "Beneath Every Face, I Remain · 千面之下 皆是我",
+  "coverCount": 2,
+  "image": "resource/Profile/杂志/NYLON/kys_单人杂志_NYLON_封面_1.jpg",
+  "gallery": [
+    "resource/Profile/杂志/NYLON/kys_单人杂志_NYLON_封面_1.jpg",
+    "resource/Profile/杂志/NYLON/kys_单人杂志_NYLON_封面_2.jpg",
+    "resource/Profile/杂志/NYLON/kys_单人杂志_NYLON_内页_1.jpg",
+    "resource/Profile/杂志/NYLON/kys_单人杂志_NYLON_内页_2.jpg",
+    "resource/Profile/杂志/NYLON/kys_单人杂志_NYLON_内页_3.jpg",
+    "resource/Profile/杂志/NYLON/kys_单人杂志_NYLON_内页_4.jpg",
+    "resource/Profile/杂志/NYLON/kys_单人杂志_NYLON_内页_5.jpg",
+    "resource/Profile/杂志/NYLON/kys_单人杂志_NYLON_内页_6.jpg",
+    "resource/Profile/杂志/NYLON/kys_单人杂志_NYLON_内页_7.jpg",
+    "resource/Profile/杂志/NYLON/kys_单人杂志_NYLON_内页_8.jpg",
+    "resource/Profile/杂志/NYLON/kys_单人杂志_NYLON_内页_9.jpg",
+    "resource/Profile/杂志/NYLON/kys_单人杂志_NYLON_内页_10.jpg",
+    "resource/Profile/杂志/NYLON/kys_单人杂志_NYLON_内页_11.jpg",
+    "resource/Profile/杂志/NYLON/kys_单人杂志_NYLON_内页_12.jpg",
+    "resource/Profile/杂志/NYLON/kys_单人杂志_NYLON_内页_13.jpg",
+    "resource/Profile/杂志/NYLON/kys_单人杂志_NYLON_内页_14.jpg",
+    "resource/Profile/杂志/NYLON/kys_单人杂志_NYLON_内页_15.jpg"
+  ],
+  "interview": {
+    "qa": [
+      {
+        "question": "会有觉得累或者内耗的时候吗？一般怎么让自己缓过来？",
+        "answers": [
+          {
+            "speaker": "kys",
+            "text": "当现实与真心不符，或是我被误解，很委屈的时候，我在情绪上都会感到非常疲惫。每当遇到这种情况，我都会对自己重复一句话：“只要我活得坦荡、认真，总有一天真心会被看见。”\n\n所以，即便是在委屈的时候，我也尽量不被情绪牵着走，默默做好该做的事。我相信真心终会穿越时间，抵达对方。"
+          }
+        ]
+      },
+      {
+        "question": "父亲在学习剑道的过程中发挥了怎样的作用？",
+        "answers": [
+          {
+            "speaker": "kys",
+            "text": "小时候，爸爸为了帮我克服妥瑞症，陪我一起去了道场。那时候爸爸已经四十多岁了，为了我，他和一群小孩子们一起学剑道、一起训练。作为一个大人，那一定是一件既尴尬又困难的事情，但他为了儿子，一直心甘情愿地陪着我。\n\n小时候不懂，随着时间的推移，我越来越感受到那份心有多么巨大而深沉。正是因为爸爸的牺牲和爱，才有了今天这个明亮和健康的金允植，我对爸爸始终怀着感恩之心。"
+          }
+        ]
+      },
+      {
+        "question": "你觉得剑道给你带来了什么？",
+        "answers": [
+          {
+            "speaker": "kys",
+            "text": "我认为剑道不只是锻炼身体，它更像是修炼内心。我通过剑道获得的最大收获，不是技术或实力，而是对自己的信心。小时候的我特别需要那份自信，而剑道，让我学会了相信自己。"
+          }
+        ]
+      },
+      {
+        "question": "最近最喜欢什么运动？",
+        "answers": [
+          {
+            "speaker": "kys",
+            "text": "最近我最喜欢跑步，很多人好奇我的减肥秘诀，每次我都会推荐跑步。"
+          }
+        ]
+      },
+      {
+        "question": "拍摄结束后，你一般需要多久从角色里走出来？",
+        "answers": [
+          {
+            "speaker": "kys",
+            "text": "我觉得我演过的所有角色，其实都是我内心某处本来就存在的一面。说到底，演戏这件事，就是关于“以何种方式发现和提取自己内在各种情绪与面貌”的问题。所以，我演过的所有角色，归根结底都是金允植的另一种样子。即便作品结束了，它们也依然以某种方式留在我身上。"
+          }
+        ]
+      },
+      {
+        "question": "想象过平行世界吗？如果没做演员，你觉得自己会做什么？",
+        "answers": [
+          {
+            "speaker": "kys",
+            "text": "其实这是一个我认真想过很多次的问题。但不管怎么想，结论总是一样的，我完全无法想象不做演员的自己。看来我是真心热爱演戏这件事，是一个在演戏时最幸福的人。所以，如果平行宇宙里存在另一个金允植，我希望那个他，也在作为演员生活着，做自己热爱的事，过得幸福。"
+          }
+        ]
+      },
+      {
+        "question": "从出道到现在，你觉得粉丝给了你什么？你希望自己能给粉丝带来什么？",
+        "answers": [
+          {
+            "speaker": "kys",
+            "text": "长久以来，我只敢在梦里想象的瞬间，粉丝们把它们变成了现实。这份礼物，倘若只用言语来表达，太轻了。因此我需要变得更好，来配得上这份爱，成为粉丝们无论何时提起，都能理直气壮并骄傲地说“这是我喜欢的演员”的人。请你们相信，我不会把这份爱看得理所当然，我会用更好的演技、更好的样子，去回应这份爱。谢谢你们发现我，相信我，爱我。真心地，谢谢。"
+          }
+        ]
+      }
+    ],
+    "sections": [],
+    "sourceText": "resource/Profile/杂志/NYLON/NYLON采访.md"
+  },
+  "source": "用户提供的 NYLON 封面、画报及五张采访文字页"
+}
   ];
 })();
